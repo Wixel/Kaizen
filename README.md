@@ -10,11 +10,11 @@ Simple. Frameworks are way to big and starting a project from scratch takes too 
 It's a bare basics framework, it's meant to be hacked, modified and not at all a dependancy yet sets a very organised platform to build upon.
 
 ###Includes
-Box-sizing reset.
-Simple easy to understand file structure.
-a Mobile first 12 column responsive grid.
-Typography reset with helpers and easily configurable settings.
-Color settings.
+* Box-sizing reset.
+* Simple easy to understand file structure.
+* a Mobile first 12 column responsive grid.
+* Typography reset with helpers and easily configurable settings.
+* Color settings.
 
 It loves and works well with [Bourbon](http://bourbon.io/) and [normalize.css](http://necolas.github.io/normalize.css/)
 
