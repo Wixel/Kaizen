@@ -1,0 +1,303 @@
+// load bourbon
+@import 'bourbon/bourbon';
+// settings
+@import 'base';
+// grid use: small-12 medium- etc .column/.columns
+.row{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: $max-width;
+	&.full-width{
+		max-width: 100%;    	
+	}
+	&:before, &:after{
+		content: " ";
+    	display: table;
+	}
+	&:after{
+		clear: both;
+	}
+	&.collapse > .column, &.collapse > .columns{
+		padding-left: 0;
+    	padding-right: 0;
+	}
+	&.collapse{
+		.row{
+			margin-left: 0;
+    		margin-right: 0;
+		}
+	}
+	.row{
+		width: auto;
+	    margin-left: -0.9375rem;
+	    margin-right: -0.9375rem;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    max-width: none;
+	    &:before, &:after{
+	    	content: " ";
+      		display: table;
+	    }
+	    &:after{
+	    	clear: both;
+	    }
+	    &.collapse{
+	    	width: auto;
+		    margin: 0;
+		    max-width: none;
+		    &:before, &:after{
+	    	content: " ";
+      		display: table;
+		    }
+		    &:after{
+		    	clear: both;
+		    }
+	    }
+	}
+}
+.column, .columns{
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	width: 100%;
+	float: left;
+}
+[class*="column"] + [class*="column"]{
+	&:last-child{
+	    float: right;
+	}
+	// float last column to the left
+	&.end{
+	    float: left;
+	}
+}
+@media only screen{
+	.column, .columns {
+	    position: relative;
+	    padding-left: 0.9375rem;
+	    padding-right: 0.9375rem;
+	    float: left;
+	}
+	.small{
+		&-1{
+			width: 8.33333%;
+		}
+		&-2{
+			width: 16.66667%;
+		}
+		&-3{
+			width: 25%;
+		}
+		&-4{
+			width: 33.33333%;
+		}
+		&-5{
+			width: 41.66667%;
+		}
+		&-6{
+			width: 50%;
+		}
+		&-7{
+			width: 58.33333%;
+		}
+		&-8{
+			width: 66.66667%;
+		}
+		&-9{
+			width: 75%;
+		}
+		&-10{
+			width: 83.33333%;
+		}
+		&-11{
+			width: 91.66667%;
+		}
+		&-12{
+			width: 100%;
+		}
+	}
+	.column.small-centered,
+  .columns.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+
+  .column.small-uncentered,
+  .columns.small-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left; }
+
+  .column.small-centered:last-child,
+  .columns.small-centered:last-child {
+    float: none; }
+
+  .column.small-uncentered:last-child,
+  .columns.small-uncentered:last-child {
+    float: left; }
+
+  .column.small-uncentered.opposite,
+  .columns.small-uncentered.opposite {
+    float: right; }
+}
+@media only screen and (min-width: $medium-breakpoint){
+	.column, .columns {
+	    position: relative;
+	    padding-left: 0.9375rem;
+	    padding-right: 0.9375rem;
+	    float: left;
+	}
+	.medium{
+		&-1{
+			width: 8.33333%;
+		}
+		&-2{
+			width: 16.66667%;
+		}
+		&-3{
+			width: 25%;
+		}
+		&-4{
+			width: 33.33333%;
+		}
+		&-5{
+			width: 41.66667%;
+		}
+		&-6{
+			width: 50%;
+		}
+		&-7{
+			width: 58.33333%;
+		}
+		&-8{
+			width: 66.66667%;
+		}
+		&-9{
+			width: 75%;
+		}
+		&-10{
+			width: 83.33333%;
+		}
+		&-11{
+			width: 91.66667%;
+		}
+		&-12{
+			width: 100%;
+		}
+	}
+	.column.medium-centered,
+  .columns.medium-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+
+  .column.medium-uncentered,
+  .columns.medium-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left; }
+
+  .column.medium-centered:last-child,
+  .columns.medium-centered:last-child {
+    float: none; }
+
+  .column.medium-uncentered:last-child,
+  .columns.medium-uncentered:last-child {
+    float: left; }
+
+  .column.medium-uncentered.opposite,
+  .columns.medium-uncentered.opposite {
+    float: right; }
+}
+@media only screen and (min-width: $large-breakpoint){
+	.column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left; }
+
+	.large{
+		&-1{
+			width: 8.33333%;
+		}
+		&-2{
+			width: 16.66667%;
+		}
+		&-3{
+			width: 25%;
+		}
+		&-4{
+			width: 33.33333%;
+		}
+		&-5{
+			width: 41.66667%;
+		}
+		&-6{
+			width: 50%;
+		}
+		&-7{
+			width: 58.33333%;
+		}
+		&-8{
+			width: 66.66667%;
+		}
+		&-9{
+			width: 75%;
+		}
+		&-10{
+			width: 83.33333%;
+		}
+		&-11{
+			width: 91.66667%;
+		}
+		&-12{
+			width: 100%;
+		}
+	}    
+
+    .column.large-centered,
+  .columns.large-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+
+  .column.large-uncentered,
+  .columns.large-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left; }
+
+  .column.large-centered:last-child,
+  .columns.large-centered:last-child {
+    float: none; }
+
+  .column.large-uncentered:last-child,
+  .columns.large-uncentered:last-child {
+    float: left; }
+
+  .column.large-uncentered.opposite,
+  .columns.large-uncentered.opposite {
+    float: right; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

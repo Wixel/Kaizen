@@ -1,0 +1,96 @@
+// Typography
+// fonts
+$header-font-stack: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-stack: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// headings
+$header-line-height: 1.4 !default;
+$header-top-margin: .2rem !default;
+$header-bottom-margin: 1.4rem !default;
+$header-font-weight: 400;
+$h1-font-size: rem(35) !default;
+$h2-font-size: rem(28) !default;
+$h3-font-size: rem(24) !default;
+$h4-font-size: rem(22) !default;
+$h5-font-size: rem(18) !default;
+$h6-font-size: rem(16) !default;
+// base font styles
+$body-font-size: 100%;
+$body-font-weight: 300;
+$body-line-height: 1.4;
+// paragraph font styles
+$paragraph-line-height: 1.6;
+$paragraph-font-size: rem(18);
+
+// Grid
+$max-width: rem(1140);
+$medium-breakpoint: rem(768);
+$large-breakpoint: rem(1024);
+$xlarge-breakpoint: rem(1400);
+
+// colors
+$primary-color: #606060;
+$secondary-color: #FFFFFF;
+$accent-color: #E2B23F;
+$soft-color: #F1F4F5;
+// spacing
+$small-space: rem(35);
+$medium-space: rem(90);
+$large-space: $medium-space * 2;
+
+
+// box sizing
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+html, body{
+	// typography relies on this
+	font-size: $body-font-size;
+}
+body{
+	// typography values - load typography.scss
+	@extend %body-type;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+// responsive images
+img{
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+  	vertical-align: middle;
+  	-ms-interpolation-mode: bicubic;
+}
+
+
+// helpers
+.padds{
+	&-top{
+		&-small{
+			padding-top: $small-space;
+		}
+		&-medium{
+			padding-top: $medium-space;
+		}
+		&-large{
+			padding-top: $large-space;
+		}
+	}
+	&-bottom{
+		&-small{
+			padding-bottom: $small-space;
+		}
+		&-medium{
+			padding-bottom: $medium-space;
+		}
+		&-large{
+			padding-bottom: $large-space;
+		}
+	}
+}
+
+
+
+
+
+
