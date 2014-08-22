@@ -1,0 +1,27 @@
+{
+  "name": "wixel-framework",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nicovanzyl/simple-wixel-starter-framework",
+  "authors": [
+    "Nico Van Zyl <nico@wixelhq.com>"
+  ],
+  "description": "a Simple-as-possible responsive Sass starter framework.",
+  "main": "scss/main.scss",
+  "keywords": [
+    "responsive",
+    "sass",
+    "framework"
+  ],
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.0.2",
+    "normalize-css": "~3.0.1"
+  }
+}
