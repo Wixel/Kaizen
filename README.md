@@ -16,7 +16,7 @@ It's a bare basics framework, it's meant to be hacked, modified and not at all a
 * Typography reset with helpers and easily configurable settings.
 * Color settings.
 
-It loves and works well with [Bourbon](http://bourbon.io/) and [normalize.css](http://necolas.github.io/normalize.css/)
+Get really Sassy with [Bourbon](http://bourbon.io/) and keep your naughty friends inline with [normalize.css](http://necolas.github.io/normalize.css/) (This framework loves both)
 
 ###Installation
 Just drop the files in your Sass folder and either use the main.scss file as your main sass file or copy it's content into the top of your current stylesheet.
