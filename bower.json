@@ -1,7 +1,7 @@
 {
   "name": "wixel-framework",
   "version": "0.1.0",
-  "homepage": "https://github.com/nicovanzyl/simple-wixel-starter-framework",
+  "homepage": "https://github.com/wixel/simple-wixel-starter-framework",
   "authors": [
     "Nico Van Zyl <nico@wixelhq.com>"
   ],
@@ -18,7 +18,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "bower.json"
   ],
   "dependencies": {
     "bourbon": "~4.0.2",
