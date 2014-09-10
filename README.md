@@ -19,6 +19,8 @@ It's a bare basics framework, it's meant to be hacked, modified and not at all a
 Get really Sassy with [Bourbon](http://bourbon.io/) and keep your naughty friends inline with [normalize.css](http://necolas.github.io/normalize.css/) (This framework loves both)
 
 ###Installation
+Install via bower using `bower install wixel-framework`
+
 Just drop the files in your Sass folder and either use the main.scss file as your main sass file or copy it's content into the top of your current stylesheet.
 
 ###Using the typography
