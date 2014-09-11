@@ -52,6 +52,11 @@ body{
 	padding: 0;
 	margin: 0;
 	position: relative;
+	
+	// font smoothing
+	@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
+    	-webkit-font-smoothing: antialiased !important; 
+    	-moz-osx-font-smoothing: grayscale;
 }
 // responsive images
 img{
