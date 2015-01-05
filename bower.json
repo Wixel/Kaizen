@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "bourbon": "~4.0.2",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "jquery": "~2.1.3"
   }
 }
