@@ -1,0 +1,22 @@
+/*
+Setting up the framework
+
+Directory structure: (Copy from bower_components into wixel-framework)
+scss
+ |
+  _base.scss
+  _grid.scss
+  _typography.scss
+  main.scss
+  vendor - directory
+    |
+    _normalize.scss
+    bourbon - directory
+
+
+
+Run watch.sh in your terminal using the following command: .watch.sh
+
+This will compile your sass into this file
+
+ */

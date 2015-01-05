@@ -1,10 +1,10 @@
 // a simple responsive framework.
 // paste/import this at the top of your main stylesheet
 
-// load bourbon
-//
 // We love using bourbon, it follows our lightweight and simple approach.
-@import 'bourbon/bourbon';
+@import 'vendor/bourbon/bourbon';
+// load normalize.css - place in vendor directory and rename to _normalize.scss
+@import 'vendor/normalize';
 //  this is the settings file & contains css that needs to load first
 @import 'base';
 // load the incredibly easy to use grid
