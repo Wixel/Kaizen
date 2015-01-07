@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         files: [
           {expand: true, flatten: true, src: ['bower_components/normalize-css/normalize.css'], dest: 'scss/vendor/',
           rename: function(dest, src) {
-            return dest + src.replace('.css','.scss');
+            return dest + src.replace('normalize.css','_normalize.scss');
           }},
           {expand: true, flatten: true, src: ['bower_components/jquery/dist/jquery.min.js'], dest: 'js/',}
         ]
