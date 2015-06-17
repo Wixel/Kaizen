@@ -40,7 +40,7 @@ $large-space: $medium-space * 2;
 
 // box sizing
 *, *:before, *:after {
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
 html, body{
 	// typography relies on this
@@ -55,8 +55,8 @@ body{
 	
 	// font smoothing
 	@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
-    	-webkit-font-smoothing: antialiased; 
-    	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
 }
 // responsive images
 img{
