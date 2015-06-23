@@ -94,7 +94,7 @@ Most typography changes should be done in `base.scss` but you can also work insi
 #####Typography helpers
 Center, left or right align text by using `.text-center` this applies to all breakpoints, for breakpoint with inheritance use `.small--text-center`, `.medium-text-right`, `.large-text-left` or for breakpoint specific text alignment use `.small-only-text-center`, `.medium-only-text-right` (these do not inherit).
 
-Add `.no-list-style` to `<ul>` or `<ol>` to remove the default styling from a list.
+Add `.no-style-list` to `<ul>` or `<ol>` to remove the default styling from a list.
 
 ###Using the grid:
 The grid is a 12 column grid for mobile/small, tablet/medium, desktop/large.
