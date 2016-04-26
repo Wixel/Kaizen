@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           },
           {
             expand: true,
-            cwd: 'bower_components/bourbon/dist',
+            cwd: 'bower_components/bourbon/app/assets/stylesheets',
             src: ['**'],
             dest: 'scss/vendor/bourbon'
           }
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       }
     }
   });
-  
+
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
