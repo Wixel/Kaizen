@@ -1,19 +1,19 @@
 // Typography resets
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 // highlight
 ::-moz-selection {
-    background: $primary-color;
-    color: $secondary-color;
-    text-shadow: none;
+  background: $primary-color;
+  color: $secondary-color;
+  text-shadow: none;
 }
 
 ::selection {
-    background: $primary-color;
-    color: $secondary-color;
-    text-shadow: none;
+  background: $primary-color;
+  color: $secondary-color;
+  text-shadow: none;
 }
 // Body text styling
 // add this to body using @extend %body-type;
@@ -63,7 +63,6 @@ p{
 b, strong{
 	font-weight: 400;
 }
-
 
 // helpers
 .no-style-list{
@@ -152,11 +151,3 @@ b, strong{
 		}
 	}
 }
-
-
-
-
-
-
-
-
