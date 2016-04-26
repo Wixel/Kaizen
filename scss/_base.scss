@@ -37,9 +37,8 @@ $small-space: rem(35);
 $medium-space: rem(90);
 $large-space: $medium-space * 2;
 
-
 // box sizing
-*, *:before, *:after {
+*, *:before, *:after{
 	box-sizing: border-box;
 }
 html, body{
@@ -52,10 +51,10 @@ body{
 	padding: 0;
 	margin: 0;
 	position: relative;
-	
+
 	// font smoothing
 	@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
-	-webkit-font-smoothing: antialiased; 
+	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 // responsive images
@@ -66,36 +65,3 @@ img{
   	vertical-align: middle;
   	-ms-interpolation-mode: bicubic;
 }
-
-
-// helpers
-.padds{
-	&-top{
-		&-small{
-			padding-top: $small-space;
-		}
-		&-medium{
-			padding-top: $medium-space;
-		}
-		&-large{
-			padding-top: $large-space;
-		}
-	}
-	&-bottom{
-		&-small{
-			padding-bottom: $small-space;
-		}
-		&-medium{
-			padding-bottom: $medium-space;
-		}
-		&-large{
-			padding-bottom: $large-space;
-		}
-	}
-}
-
-
-
-
-
-
