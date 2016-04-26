@@ -198,6 +198,6 @@
 /*------------------------------------------------------------------------------
 	Default breakpoint grids
 ------------------------------------------------------------------------------*/
-@include breakpoint-grid(small, false); // example: .small-6
+@include breakpoint-grid(small, false, null); // example: .small-6
 @include breakpoint-grid(medium, true, $medium-breakpoint); // example: .medium-6
 @include breakpoint-grid(large, true, $large-breakpoint);  // example: .large-6
