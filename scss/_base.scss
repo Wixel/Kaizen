@@ -17,6 +17,7 @@ $h6-font-size: rem(16) !default;
 $body-font-size: 100%;
 $body-font-weight: 300;
 $body-line-height: 1.4;
+$font-smoothing: false; // Enable/Disable font-smoothing
 // paragraph font styles
 $paragraph-line-height: 1.6;
 $paragraph-font-size: rem(18);
@@ -53,9 +54,11 @@ body{
 	position: relative;
 
 	// font smoothing
-	@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	@if($font-smoothing){
+		@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 // responsive images
 img{
