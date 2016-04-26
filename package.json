@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "wixel-framework",
   "version": "1.0.0",
-  "description": "Short description",
+  "description": "a Simple-as-possible responsive Sass starter framework.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

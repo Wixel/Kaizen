@@ -1,13 +1,28 @@
-// a simple responsive framework.
-// paste/import this at the top of your main stylesheet
+/*------------------------------------------------------------------------------
+	Wixel Framework
+  - a simple responsive framework.
+------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------
+	Dependancies and base framework
+------------------------------------------------------------------------------*/
 // We love using bourbon, it follows our lightweight and simple approach.
 @import 'vendor/bourbon/bourbon';
 // load normalize.css - place in vendor directory and rename to _normalize.scss
 @import 'vendor/normalize';
-//  this is the settings file & contains css that needs to load first
+// this is the settings file & contains css that needs to load first
 @import 'base';
+// helpers to simplify development
+@import 'helpers';
 // load the incredibly easy to use grid
 @import 'grid';
 // load typography - really powerful yet small typography framework: all the power lies in the settings file
 @import 'typography';
+
+/*------------------------------------------------------------------------------
+	Wixel framework optional components
+  - uncomment them to enable components
+  - they're disabled by default for performance
+------------------------------------------------------------------------------*/
+// Buttons
+// @import 'components/buttons';
