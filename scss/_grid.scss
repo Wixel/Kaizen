@@ -69,7 +69,7 @@
 	- to create a breakpoint @include breakpoint-grid(name, mediaquery, breakpoint);
 ------------------------------------------------------------------------------*/
 @mixin breakpoint-grid($name, $mediaquery, $breakpoint) {
-	@if $mediaquery == "true" {
+	@if $mediaquery {
 		@media only screen and (min-width: $breakpoint){
 			.#{$name}{
 				&-1{
