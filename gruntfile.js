@@ -29,26 +29,12 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['bower_components/jquery/dist/jquery.min.js'], dest: 'js/',}
         ]
       }
-    },
-    jshint: {
-      files: ['Gruntfile.js', 'js/*.js'],
-      options: {
-        // options here to override JSHint defaults
-        globals: {
-          jQuery: true,
-          console: true,
-          module: true,
-          document: true
-        }
-      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('test', ['jshint']);
 
-  grunt.registerTask('default', ['copy','jshint']);
+  grunt.registerTask('default', ['copy']);
 
 };
