@@ -1,6 +1,8 @@
 - /FRONTEND.md
+- /css/
 - /css/main.css
 - /gruntfile.js
+- /img/
 - /img/favicons/114-logo.png
 - /img/favicons/120-logo.png
 - /img/favicons/144-logo.png
@@ -19,12 +21,15 @@
 - /img/favicons/favicon.png
 - /img/favicons/favicon@2x.png
 - /index.html
+- /js/
 - /js/main.js
 - /package.json
+- /scss/
 - /scss/_base.scss
 - /scss/_grid.scss
 - /scss/_helpers.scss
 - /scss/_typography.scss
+- /scss/components/
 - /scss/components/_buttons.scss
 - /scss/components/_forms.scss
 - /scss/main.scss
