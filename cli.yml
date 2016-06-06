@@ -1,30 +1,30 @@
 included:
-  - FRONTEND.md
-  - css/main.css
-  - gruntfile.js
-  - img/favicons/114-logo.png
-  - img/favicons/120-logo.png
-  - img/favicons/144-logo.png
-  - img/favicons/144-tile.png
-  - img/favicons/152-logo.png
-  - img/favicons/16-favicon.png
-  - img/favicons/160-favicon.png
-  - img/favicons/196-favicon.png
-  - img/favicons/32-favicon.png
-  - img/favicons/57-logo.png
-  - img/favicons/60-logo.png
-  - img/favicons/72-logo.png
-  - img/favicons/76-logo.png
-  - img/favicons/96-favicon.png
-  - img/favicons/favicon.ico
-  - img/favicons/favicon.png
-  - img/favicons/favicon@2x.png
-  - index.html
-  - js/main.js
-  - package.json
-  - scss/_base.scss
-  - scss/_grid.scss
-  - scss/_helpers.scss
+- FRONTEND.md
+- css/main.css
+- gruntfile.js
+- img/favicons/114-logo.png
+- img/favicons/120-logo.png
+- img/favicons/144-logo.png
+- img/favicons/144-tile.png
+- img/favicons/152-logo.png
+- img/favicons/16-favicon.png
+- img/favicons/160-favicon.png
+- img/favicons/196-favicon.png
+- img/favicons/32-favicon.png
+- img/favicons/57-logo.png
+- img/favicons/60-logo.png
+- img/favicons/72-logo.png
+- img/favicons/76-logo.png
+- img/favicons/96-favicon.png
+- img/favicons/favicon.ico
+- img/favicons/favicon.png
+- img/favicons/favicon@2x.png
+- index.html
+- js/main.js
+- package.json
+- scss/_base.scss
+- scss/_grid.scss
+- scss/_helpers.scss
   - scss/_typography.scss
   - scss/components/_buttons.scss
   - scss/components/_forms.scss
