@@ -25,7 +25,7 @@
 - /scss/_grid.scss
 - /scss/_helpers.scss
 - /scss/_typography.scss
-- scss/components/_buttons.scss
-- scss/components/_forms.scss
-- scss/main.scss
-- watch.sh
+- /scss/components/_buttons.scss
+- /scss/components/_forms.scss
+- /scss/main.scss
+- /watch.sh
