@@ -1,7 +1,6 @@
 - /FRONTEND.md
 - /css/
 - /css/main.css
-- /gruntfile.js
 - /img/
 - /img/favicons/
 - /img/favicons/114-logo.png
@@ -24,7 +23,6 @@
 - /index.html
 - /js/
 - /js/main.js
-- /package.json
 - /scss/
 - /scss/_base.scss
 - /scss/_grid.scss
@@ -36,4 +34,3 @@
 - /scss/main.scss
 - /scss/vendor/
 - /scss/vendor/.gitkeep
-- /watch.sh
