@@ -1,0 +1,153 @@
+// Typography resets
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td{
+  margin: 0;
+  padding: 0;
+}
+// highlight
+::-moz-selection {
+  background: $primary-color;
+  color: $secondary-color;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary-color;
+  color: $secondary-color;
+  text-shadow: none;
+}
+// Body text styling
+// add this to body using @extend %body-type;
+%body-type{
+	color: $primary-color;
+	font-weight: $body-font-weight;
+	line-height: $body-line-height;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed; //change to "optimizeLegibility" for better rendering - impacts performance
+}
+// headings
+h1, h2, h3, h4, h5, h6{
+	b, strong{
+		font-weight: 700;
+	}
+	font-family: $header-font-stack;
+	font-weight: $header-font-weight;
+	margin-top:$header-top-margin;
+	margin-bottom:$header-bottom-margin;
+}
+// reduce headings size on smaller screens
+h1{font-size: $h1-font-size / 1.2;}
+h2{font-size: $h2-font-size / 1.2;}
+h3{font-size: $h3-font-size / 1.2;}
+h4{font-size: $h4-font-size / 1.2;}
+h5{font-size: $h5-font-size / 1.2;}
+h6{font-size: $h6-font-size / 1.2;}
+// links
+a{
+	text-decoration:none;
+	color: inherit;
+	line-height: inherit;
+	&:hover, &:focus{
+		color: $accent-color;
+	}
+}
+// paragraphs
+p{
+	font-family: inherit;
+	line-height: $paragraph-line-height;
+	font-size: $paragraph-font-size /1.125;
+	margin-bottom: 2rem;
+	@media only screen and (min-width: $medium-breakpoint){
+		font-size: $paragraph-font-size;
+	}
+}
+b, strong{
+	font-weight: 400;
+}
+
+// helpers
+.no-style-list{
+	list-style:none;
+}
+// responsive text alignment
+.text{
+	&-left{
+		text-align: left;
+	}
+	&-center{
+		text-align: center;
+	}
+	&-right{
+		text-align: right;
+	}
+}
+@media only screen and (max-width: $medium-breakpoint){
+	.small-only-text{
+		&-left{
+			text-align: left;
+		}
+		&-center{
+			text-align: center;
+		}
+		&-right{
+			text-align: right;
+		}
+	}
+}
+@media only screen{
+	.small-text{
+		&-left{
+			text-align: left;
+		}
+		&-center{
+			text-align: center;
+		}
+		&-right{
+			text-align: right;
+		}
+	}
+}
+@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint){
+	.medium-only-text{
+		&-left{
+			text-align: left;
+		}
+		&-center{
+			text-align: center;
+		}
+		&-right{
+			text-align: right;
+		}
+	}
+}
+@media only screen and (min-width: $medium-breakpoint){
+	.medium-text{
+		&-left{
+			text-align: left;
+		}
+		&-center{
+			text-align: center;
+		}
+		&-right{
+			text-align: right;
+		}
+	}
+	h1{font-size: $h1-font-size;}
+	h2{font-size: $h2-font-size;}
+	h3{font-size: $h3-font-size;}
+	h4{font-size: $h4-font-size;}
+	h5{font-size: $h5-font-size;}
+	h6{font-size: $h6-font-size;}
+}
+@media only screen and (min-width: $large-breakpoint){
+	.large-text{
+		&-left{
+			text-align: left;
+		}
+		&-center{
+			text-align: left;
+		}
+		&-right{
+			text-align: left;
+		}
+	}
+}

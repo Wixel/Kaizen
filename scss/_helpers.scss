@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+	Helpers
+------------------------------------------------------------------------------*/
+
+// Spacing
+.padds{
+	&-top{
+		&-small{
+			padding-top: $small-space;
+		}
+		&-medium{
+			padding-top: $medium-space;
+		}
+		&-large{
+			padding-top: $large-space;
+		}
+	}
+	&-bottom{
+		&-small{
+			padding-bottom: $small-space;
+		}
+		&-medium{
+			padding-bottom: $medium-space;
+		}
+		&-large{
+			padding-bottom: $large-space;
+		}
+	}
+}

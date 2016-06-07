@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------------------
+	Buttons
+------------------------------------------------------------------------------*/
+.button{
+	display: inline-block;
+	padding: ($small-space/ 3) ($small-space/ 1.5);
+	background-color: $accent-color;
+	border: 1px solid $accent-color;
+	color: $secondary-color;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	@include user-select(none);
+	@include transition(background-color 0.15s ease-in-out);
+
+	// Block button
+	&-block{
+		width: 100%;
+	}
+
+	// Button sizes
+	&-tiny{
+		padding: ($small-space/ 6) ($small-space/ 3);
+		font-size: 60%;
+	}
+	&-small{
+		padding: ($small-space/ 4) ($small-space/ 2);
+		font-size: 80%;
+	}
+	&-large{
+		padding: ($small-space/ 2) ($small-space/ 1);
+		font-size: 120%;
+	}
+
+	// Interaction
+	&:hover{
+		background-color: darken($accent-color, 10%);
+		border-color: darken($accent-color, 9%);
+		color: $secondary-color;
+		cursor: pointer;
+	}
+	&:focus{
+		outline: none;
+		color: $secondary-color;
+	}
+
+	//  Disabled button
+  &-disabled{
+    background-color: $soft-color;
+		border: 1px solid $soft-color;
+
+
+    &:hover{
+      background-color: $soft-color;
+			border-color: $soft-color;
+			cursor: not-allowed;
+    }
+  }
+
+	// Alt button
+	&-alt{
+		background-color: $primary-color;
+		border: 1px solid $primary-color;
+
+		// Interaction
+		&:hover{
+			background-color: lighten($primary-color, 10%);
+			border-color: lighten($primary-color, 9%);
+			color: $secondary-color;
+		}
+	}
+}

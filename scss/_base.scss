@@ -1,0 +1,117 @@
+/*------------------------------------------------------------------------------
+	General Settings
+------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------
+	Custom font stacks
+	- By default we load fonts from Google fonts, check the index.html file
+------------------------------------------------------------------------------*/
+$header-font-stack: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-stack: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+/*------------------------------------------------------------------------------
+	Typography settings
+------------------------------------------------------------------------------*/
+
+// Headings
+$header-line-height: 1.4 !default;
+$header-top-margin: .2rem !default;
+$header-bottom-margin: 1.4rem !default;
+$header-font-weight: 400;
+$h1-font-size: rem(35) !default;
+$h2-font-size: rem(28) !default;
+$h3-font-size: rem(24) !default;
+$h4-font-size: rem(22) !default;
+$h5-font-size: rem(18) !default;
+$h6-font-size: rem(16) !default;
+
+// base font styles
+$body-font-size: 100%;
+$body-font-weight: 300;
+$body-line-height: 1.4;
+
+$font-smoothing: false; // Enable/Disable font-smoothing
+
+// paragraph font styles
+$paragraph-line-height: 1.6;
+$paragraph-font-size: rem(18);
+
+/*------------------------------------------------------------------------------
+	Grid settings
+------------------------------------------------------------------------------*/
+
+// Max width for .row's
+$max-width: rem(1140);
+
+// Breakpoints
+$medium-breakpoint: rem(768);
+$large-breakpoint: rem(1024);
+$xlarge-breakpoint: rem(1400);
+
+// Grid settings
+$gutter-size: rem(10);
+
+/*------------------------------------------------------------------------------
+	Colour settings
+------------------------------------------------------------------------------*/
+$primary-color: #22252C;
+$secondary-color: #FFFFFF;
+$accent-color: #E56F69;
+$soft-color: #E3E3E5;
+
+/*------------------------------------------------------------------------------
+	Spacing settings
+	- We use these for the spacing helpers but they're also a good way to keep
+		things consistent
+------------------------------------------------------------------------------*/
+$small-space: rem(35);
+$medium-space: rem(90);
+$large-space: $medium-space * 2;
+
+/*------------------------------------------------------------------------------
+	Component settings
+	- Button settings
+------------------------------------------------------------------------------*/
+
+// Buttons
+
+
+/*------------------------------------------------------------------------------
+	Resets & resposnive goodness
+------------------------------------------------------------------------------*/
+
+// box sizing
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+// Set default font size
+html, body{
+	// typography relies on this
+	font-size: $body-font-size;
+}
+
+body{
+	// typography values - load typography.scss
+	@extend %body-type;
+	padding: 0;
+	margin: 0;
+	position: relative;
+
+	// font smoothing
+	@if($font-smoothing){
+		@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+// responsive images
+img{
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+  	vertical-align: middle;
+  	-ms-interpolation-mode: bicubic;
+}

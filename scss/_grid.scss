@@ -1,0 +1,203 @@
+/*------------------------------------------------------------------------------
+	Grid
+	Usage:
+		- '.full-width' Fill container and ignore max-width constraint
+		- '.collapse' removes gutters from child .columns
+		- Default breakpoints are set at the bottom of this page
+------------------------------------------------------------------------------*/
+
+// Base grid - Contains things that generally won't change and fallback grid
+.row{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: $max-width;
+	// Fill container and ignore max-width constraint
+	&.full-width{
+		max-width: 100%;
+	}
+	&:before, &:after{
+		content: " ";
+    display: table;
+	}
+	&:after{
+		clear: both;
+	}
+	&.collapse > .column, &.collapse > .columns{
+		padding-left: 0;
+    padding-right: 0;
+	}
+	&.collapse{
+		.row{
+			margin-left: 0;
+    	margin-right: 0;
+		}
+	}
+	// Child rows
+	.row{
+		width: auto;
+    margin-left: -$gutter-size;
+    margin-right: -$gutter-size;
+    max-width: none;
+    &:before, &:after{
+    	content: " ";
+    		display: table;
+    }
+    &:after{
+    	clear: both;
+    }
+	}
+}
+	// Columns default properties
+	.column, .columns{
+		position: relative;
+		padding-left: $gutter-size;
+		padding-right: $gutter-size;
+		width: 100%;
+		float: left;
+
+		// float last column to the right
+		&.end{
+		    float: right;
+		}
+	}
+
+/*------------------------------------------------------------------------------
+	Grid mixin:
+	- to create a breakpoint @include breakpoint-grid(name, mediaquery, breakpoint);
+------------------------------------------------------------------------------*/
+@mixin breakpoint-grid($name, $mediaquery, $breakpoint) {
+	@if $mediaquery {
+		@media only screen and (min-width: $breakpoint){
+			.#{$name}{
+				&-1{
+					width: 8.33333%;
+				}
+				&-2{
+					width: 16.66667%;
+				}
+				&-3{
+					width: 25%;
+				}
+				&-4{
+					width: 33.33333%;
+				}
+				&-5{
+					width: 41.66667%;
+				}
+				&-6{
+					width: 50%;
+				}
+				&-7{
+					width: 58.33333%;
+				}
+				&-8{
+					width: 66.66667%;
+				}
+				&-9{
+					width: 75%;
+				}
+				&-10{
+					width: 83.33333%;
+				}
+				&-11{
+					width: 91.66667%;
+				}
+				&-12{
+					width: 100%;
+				}
+			}
+			.column, .columns{
+				// Center column on this breakpoint
+				&.#{$name}-centered{
+					margin-left: auto;
+			    margin-right: auto;
+			    float: none;
+
+					&:last-child{
+						float: none;
+					}
+				}
+				&.#{$name}-uncentered{
+					margin-left: 0;
+			    margin-right: 0;
+			    float: left;
+
+					&:last-child{
+						float: left;
+					}
+				}
+			}
+	  }
+	}
+	@else {
+		.#{$name}{
+			&-1{
+				width: 8.33333%;
+			}
+			&-2{
+				width: 16.66667%;
+			}
+			&-3{
+				width: 25%;
+			}
+			&-4{
+				width: 33.33333%;
+			}
+			&-5{
+				width: 41.66667%;
+			}
+			&-6{
+				width: 50%;
+			}
+			&-7{
+				width: 58.33333%;
+			}
+			&-8{
+				width: 66.66667%;
+			}
+			&-9{
+				width: 75%;
+			}
+			&-10{
+				width: 83.33333%;
+			}
+			&-11{
+				width: 91.66667%;
+			}
+			&-12{
+				width: 100%;
+			}
+		}
+		.column, .columns{
+			// Center column on this breakpoint
+			&.#{$name}-centered{
+				margin-left: auto;
+				margin-right: auto;
+				float: none;
+
+				&:last-child{
+					float: none;
+				}
+			}
+			&.#{$name}-uncentered{
+				margin-left: 0;
+				margin-right: 0;
+				float: left;
+
+				&:last-child{
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+/*------------------------------------------------------------------------------
+	Default breakpoint grids
+------------------------------------------------------------------------------*/
+@include breakpoint-grid(small, false, null); // example: .small-6
+@include breakpoint-grid(medium, true, $medium-breakpoint); // example: .medium-6
+@include breakpoint-grid(large, true, $large-breakpoint);  // example: .large-6
