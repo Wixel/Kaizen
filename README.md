@@ -1,4 +1,4 @@
-#Wixel framework
+#Kaizen framework
 
 ===
 
@@ -16,7 +16,7 @@ It's a bare-bones framework, it's meant to be hacked, modified and twisted to fi
 
 
 ###Mobile first
-With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable. 
+With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.
 
 Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
 
@@ -103,7 +103,7 @@ Setting up your grid can be done from the base.css file:
 
 - `$max-width` is the max width of `.row`.
 - `$medium-breakpoint` is the breakpoint for mobile/small - tablet/medium.
-- `$large-breakpoint` is the breakpoint between tablet/medium - desktop/large 
+- `$large-breakpoint` is the breakpoint between tablet/medium - desktop/large
 - `$xlarge-breakpoint` is an additional breakpoint not used by the grid.
 
 Use `.row` as the container for your columns, you can nest containers/rows inside one another. If you want a full width container simply add `.full-width` to the `.row` container.
@@ -111,7 +111,7 @@ Use `.row` as the container for your columns, you can nest containers/rows insid
 To remove padding/margin from a container and it's child columns add `.collapse` to `.row`.
 
 #####Using columns
-add the width and `.column` or `.columns` class i.e. 
+add the width and `.column` or `.columns` class i.e.
 
 ```
 <section class="row">
@@ -171,5 +171,4 @@ Change `UA-XXXXX-X` to your site ID given by google.
 
 #####How to contribute
 
-If you spot an opportunity to improve our framework, please submit a pull request that includes instructions added to this documentation file. 
-
+If you spot an opportunity to improve our framework, please submit a pull request that includes instructions added to this documentation file.
