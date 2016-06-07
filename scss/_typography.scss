@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: $header-font-weight;
 	margin-top:$header-top-margin;
 	margin-bottom:$header-bottom-margin;
+
+  .small{
+    display: block;
+    color: lighten($primary-color, 40%);
+  }
 }
 // reduce headings size on smaller screens
 h1{font-size: $h1-font-size / 1.2;}

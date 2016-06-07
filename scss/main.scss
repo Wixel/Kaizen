@@ -34,4 +34,15 @@
 ------------------------------------------------------------------------------*/
 .header{
 	background-color: $soft-color;
+
+	&-title{
+		font-weight: 100;
+		font-size: 10vw;
+		letter-spacing: 0.16em;
+		margin-bottom: 0;
+	}
+	&-subtitle{
+		letter-spacing: 0.43em;
+		text-transform: uppercase;
+	}
 }
