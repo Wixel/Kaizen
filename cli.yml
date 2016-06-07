@@ -34,4 +34,6 @@
 - /scss/components/_buttons.scss
 - /scss/components/_forms.scss
 - /scss/main.scss
+- /scss/vendor/
+- /scss/vendor/.gitkeep
 - /watch.sh
