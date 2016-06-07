@@ -111,7 +111,7 @@
 			}
 			.column, .columns{
 				// Center column on this breakpoint
-				.#{$name}-centered{
+				&.#{$name}-centered{
 					margin-left: auto;
 			    margin-right: auto;
 			    float: none;
@@ -120,7 +120,7 @@
 						float: none;
 					}
 				}
-				.#{$name}-uncentered{
+				&.#{$name}-uncentered{
 					margin-left: 0;
 			    margin-right: 0;
 			    float: left;
@@ -173,7 +173,7 @@
 		}
 		.column, .columns{
 			// Center column on this breakpoint
-			.#{$name}-centered{
+			&.#{$name}-centered{
 				margin-left: auto;
 				margin-right: auto;
 				float: none;
@@ -182,7 +182,7 @@
 					float: none;
 				}
 			}
-			.#{$name}-uncentered{
+			&.#{$name}-uncentered{
 				margin-left: 0;
 				margin-right: 0;
 				float: left;
