@@ -80,12 +80,15 @@ We use the SCSS syntax of Sass. All settings are in *_base.scss*. It's best to c
 ###Using the typography:
 
 #####Adding custom fonts
+
 Use google fonts and change the font setting in the base Sass file.
 
 #####Font sizes
+
 Heading and paragraph font sizes are all set in the _base.scss file, for mobile these sizes are divided by 1.2 (`35 / 1.2`) for headings and 1.125 for paragraph text. There are additional typography settings for line-height and font weight.
 
 #####Customize things even more
+
 Most typography changes should be done in `base.scss` but you can also work inside `_typography.scss`
 
 #####Typography helpers
@@ -94,6 +97,7 @@ Center, left or right align text by using `.text-center` this applies to all bre
 Add `.no-style-list` to `<ul>` or `<ol>` to remove the default styling from a list.
 
 ###Using the grid:
+
 The grid is a 12 column grid for mobile/small, tablet/medium, desktop/large.
 
 Setting up your grid can be done from the base.css file:
@@ -108,6 +112,7 @@ Use `.row` as the container for your columns, you can nest containers/rows insid
 To remove padding/margin from a container and it's child columns add `.collapse` to `.row`.
 
 #####Using columns
+
 add the width and `.column` or `.columns` class i.e.
 
 ```
@@ -122,6 +127,22 @@ add the width and `.column` or `.columns` class i.e.
 ```
 
 #####Column widths
+
+| Mobile/Small breakpoint |
+|-------------------------|
+| .small-1                |
+| .small-2                |
+| .small-3                |
+| .small-4                |
+| .small-5                |
+| .small-6                |
+| .small-7                |
+| .small-8                |
+| .small-9                |
+| .small-10               |
+| .small-11               |
+| .small-12               |
+
 **Mobile/Small breakpoint**: `.small-1`, `.small-2`, `.small-3`, `.small-4`, `.small-5`, `.small-6`, `.small-7`, `.small-8`, `.small-9`, `.small-10`, `.small-11`, `.small-12`
 
 **Tablet/Medium breakpoint**: `.medium-1`, `.medium-2`, `.medium-3`, `.medium-4`, `.medium-5`, `.medium-6`, `.medium-7`, `.medium-8`, `.medium-9`, `.medium-10`, `.medium-11`, `.medium-12`
