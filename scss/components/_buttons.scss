@@ -5,12 +5,17 @@
 	display: inline-block;
 	padding: ($small-space/ 3) ($small-space/ 1.5);
 	background-color: $accent-color;
-	border: 1px solid $accent-color;
+	// border: 1px solid $accent-color;
 	color: $secondary-color;
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
 	@include user-select(none);
 	@include transition(background-color 0.15s ease-in-out);
+
+	background: url(/img/cover-multi.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 
 	// Block button
 	&-block{
