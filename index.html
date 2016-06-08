@@ -74,38 +74,90 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-      <header class="header row full-width text-center padds-top-medium padds-bottom-large">
-        <section class="row">
-          <div class="small-12 medium-10 large-7 medium-centered columns">
-            <h1 class="header-title">KAIZEN</h1>
-            <h2 class="header-subtitle">Front-end Framework</h2>
-            <p>(a Japanese term that means “continuous improvement.” Kaizen (KYE-zen) is an effort to do things faster and more efficiently. On the factory floor, workers in Japanese factories are encouraged to provide feedback and suggestions, often taking time at the end of their shifts to brainstorm ideas. To “kaizen” a problem means to dissect it and come up with solutions. Kaizen also is used in a white-collar environment, to speed up product development.)</p>
-            <a href="https://github.com/Wixel/Kaizen" class="button">View On <strong>GitHub</strong></a>
-          </div>
-        </section>
-      </header>
+    <header class="header row full-width text-center padds-top-medium">
+      <section class="row collapse padds-bottom-large">
+        <div class="small-12 medium-10 large-7 medium-centered columns">
+          <h1 class="header-title">KAIZEN</h1>
+          <h2 class="header-subtitle">Front-end Framework</h2>
+          <p>a Japanese term that means “continuous improvement.” Kaizen (KYE-zen) is an effort to do things faster and more efficiently. On the factory floor, workers in Japanese factories are encouraged to provide feedback and suggestions, often taking time at the end of their shifts to brainstorm ideas. To “kaizen” a problem means to dissect it and come up with solutions.</p>
+          <a href="https://github.com/Wixel/Kaizen" class="button">View On <strong>GitHub</strong></a>
+        </div>
+      </section>
+      <aside class="tech">
+        <span class="tech-item">BEM</span>
+        <span class="tech-item">Sass</span>
+        <span class="tech-item">Bourbon</span>
+      </aside>
+    </header>
+    <article class="description">
+      <main class="row">
+        <div class="small-12 medium-4 columns padds-top-small padds-bottom-small">
+          <h2>Why?</h2>
+          <p>
+            It's about simplicity - We've built a nimble framework to get you started without the stuff you don't need. It only takes a few minutes to setup and every line of code is carefully considered with performance in mind. <strong>Think of it as the pencil instead of the blank page.</strong>
+          </p>
+        </div>
+        <div class="small-12 medium-4 columns padds-top-small padds-bottom-small">
+          <h2>What?</h2>
+          <p>
+            It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely organized framework to build upon with just the right amount of utility and components.
+          </p>
+        </div>
+        <div class="small-12 medium-4 columns padds-top-small padds-bottom-small">
+          <h2>How?</h2>
+          <p>
+            If you're already using <a href="http://sass-lang.com/" target="_blank">Sass</a>, you likely have <a href="https://www.ruby-lang.org/" target="_blank">Ruby</a> installed. To use Kaizen simply install it:
+          </p>
+          <code>gem install -g kaizen</code>
+          <p>
+            To learn how to use the Kaizen CLI run:
+          </p>
+          <code>kzn -help</code>
+        </div>
+      </main>
+    </article>
+    <div class="method">
       <section class="row">
-        <article class="small-12 medium-3 columns padds-top-small padds-bottom-small">
+        <article class="small-12 medium-6 large-3 columns padds-top-small padds-bottom-small">
           <h3>Seiri <small class="small">(Organization)</small></h3>
           <p>Keep just what is needed, clearly distinguish between what is needed and what should be optional.</p>
         </article>
-        <article class="small-12 medium-3 columns padds-top-small padds-bottom-small">
+        <article class="small-12 medium-6 large-3 columns padds-top-small padds-bottom-small">
           <h3>Seiton <small class="small">(Orderliness)</small></h3>
           <p>Have a place for everything and implement a system whereby everything is in its place. Organize in a way that ensures that necessary things are easily accessible.</p>
         </article>
-        <article class="small-12 medium-3 columns padds-top-small padds-bottom-small">
+        <article class="small-12 medium-6 large-3 columns padds-top-small padds-bottom-small">
           <h3>Seiso <small class="small">(Cleanliness)</small></h3>
           <p>This can be viewed as systematic clearing where everything is continuesly improved, tested and maintained on a regular basis.</p>
         </article>
-        <article class="small-12 medium-3 columns padds-top-small padds-bottom-small">
+        <article class="small-12 medium-6 large-3 columns padds-top-small padds-bottom-small">
           <h3>Seiketsu <small class="small">(Standardization)</small></h3>
           <p>Establish methods that will ensure the effective continuation of steps 1 thought 3.</p>
         </article>
       </section>
-      <!-- <footer>
-        <p>This project is maintained by <a href="https://github.com/Wixel">Wixel</a></p>
-        <p><small>Hosted on GitHub Pages</p>
-      </footer> -->
+    </div>
+    <section class="row">
+      <article class="small-12 large-3 columns padds-top-small padds-bottom-small">
+        <h4>Mobile-first</h4>
+        <p>With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.</p>
+      </article>
+      <article class="small-12 large-3 columns padds-top-small padds-bottom-small">
+        <h4>Typography</h4>
+        <p>Typography reset and some tools and easily configurable settings.</p>
+      </article>
+      <article class="small-12 large-3 columns padds-top-small padds-bottom-small">
+        <h4>Unstyled</h4>
+        <p>There's no need to remove styles, simply add your brand colors to the base framework variables.</p>
+      </article>
+      <article class="small-12 large-3 columns padds-top-small padds-bottom-small">
+        <h4>Performance</h4>
+        <p>Optional components are disabled by default, with a base stylesheet of 9kb.</p>
+      </article>
+    </section>
+    <footer class="row text-center">
+      <p>This project is maintained by <a href="https://github.com/Wixel">Wixel</a></p>
+      <p><small>Hosted on GitHub Pages</p>
+    </footer>
 
   </body>
 </html>

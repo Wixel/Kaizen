@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: $header-font-weight;
 	margin-top:$header-top-margin;
 	margin-bottom:$header-bottom-margin;
+  text-transform: uppercase;
 
   .small{
     display: block;

@@ -46,3 +46,33 @@
 		text-transform: uppercase;
 	}
 }
+	.tech{
+		background-color: darken($soft-color, 2%);
+		padding: $small-space / 2;
+
+		&-item{
+			font-weight: 400;
+			padding: 0 20px;
+		}
+	}
+.description{
+	background-color: lighten($soft-color, 8%);
+
+	p{
+		margin-bottom: 1em;
+	}
+	code{
+		display: block;
+		margin-bottom: 1em;
+		padding: 5px;
+		background-color: lighten($accent-color, 30%);
+		border-radius: 2px;
+	}
+}
+.method{
+	background-color: lighten($soft-color, 9.5%);
+
+	p{
+		margin-bottom: 1em;
+	}
+}
