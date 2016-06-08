@@ -10,13 +10,16 @@ It's a bare-bones framework, it's meant to be hacked, modified and twisted to fi
 
 ##Installation
 
+```sh
+gem install kaizen-cli
+```
+
 ####Requirements
 
 - **[Ruby](https://www.ruby-lang.org/)** 
 
 ####Getting started
 
-- Run: `gem install kaizen-cli` to install the Kaizen CLI
 - Run: `kzn [directory]` sets up the specified directory without overwriting files
 - Run: `kzn [directory] -f` sets up the specified directory and overwrites files if they already exist
 - Run: `kzn -s` - watches the current directory for any changes and compiles changes to Sass files automatically
