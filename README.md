@@ -129,7 +129,7 @@ add the width and `.column` or `.columns` class i.e.
 #####Column widths
 
 **Mobile/Small breakpoint:**
-
+|--------------------------------------------|
 | .small-1                | .small-7         |
 | .small-2                | .small-8         |
 | .small-3                | .small-9         |
