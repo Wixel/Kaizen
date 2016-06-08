@@ -1,26 +1,36 @@
-===
-
 #Kaizen framework
 
 ===
 
-A simple-as-possible responsive Sass (built with [Bourbon](http://bourbon.io/)) starter framework with just the right amount of features to [get a project started in minutes](#installing-it-via-the-shell-script).
+A simple-as-possible responsive Sass (built with [Bourbon](http://bourbon.io/)) starter framework with just the right amount of features & components to [get a project started in minutes](#install).
 
 ###Why?
-It's about simplicity - frameworks like Foundation and Bootstrap are rather large and have a lots of unnecessary code. For this reason, we built a nimble front-end framework to get you started without the stuff you don't need.
-
-It only takes a few minutes to get going and every line of code is carefully considered with performance in mind.
-
-Think of it as the pencil instead of the blank page.
+It's about simplicity - We've built a nimble framework to get you started without the stuff you don't need. It only takes a few minutes to setup and every line of code is carefully considered with performance in mind. Think of it as the pencil instead of the blank page.
 
 ###What?
-It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely well organized framework to build upon.
+It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely organized framework to build upon with just the right amount of utility and components.
 
+##Install
+===
+
+####Requirements
+
+- **[Git](https://git-scm.com/)** a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. [here's the installation guide to that](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [here's a guide if you're unfamiliar with git](http://rogerdudler.github.io/git-guide/).
+- **[Ruby](https://www.ruby-lang.org/)** [get it running on your machine](https://www.ruby-lang.org/en/downloads/).
+- **[Sass](http://sass-lang.com/)** is a CSS preprocessor and is used for almost everything in the framework code [get it installed](http://sass-lang.com/install).
+
+####Getting started
+- Run: `gem install -g kaizen` to install the Kaizen CLI
+- Run: `kzn [directory]` sets up the specified directory without overwriting files
+- Run: `kzn [directory] -f` sets up the specified directory and overwrites files if they already exist
+- Run: `kzn -s` - watches current directory for any changes and compiles Sass files
+- Run: `kzn [directory] -s` watches the specified directory for any changes and compiles Sass files
+- Run: `kzn --help` for further instructions
 
 ###Mobile first
 With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.
 
-Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
+[NOTE] Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
 
 ```
 .button{
@@ -58,25 +68,7 @@ Always add universal styles to the code outside of breakpoints and then add addi
 
 The framework installs the [Bourbon](http://bourbon.io/) mixin library to extend the power of Sass. Bourbon also adds functionality like vendor prefixing, calculations eg. `px` to `REM`, `EM` for faster and easier development. It also includes [normalize.css](http://necolas.github.io/normalize.css/) as a reset to keep things consistent across modern browsers (IE8+, ofcourse).
 
-##Installation
-===
 
-####Requirements
-
-- **[Git](https://git-scm.com/)** a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. [here's the installation guide to that](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [here's a guide if you're unfamiliar with git](http://rogerdudler.github.io/git-guide/).
-- **[NPM](https://www.npmjs.com/) (node.js)** [here's how to get node.js running on your machine](https://docs.npmjs.com/getting-started/installing-node) - installing node.js will include npm (node package manager, but remember to keep npm [updated](https://docs.npmjs.com/getting-started/installing-node#updating-npm)).
-- **[Bower](http://bower.io/)** a package manager for the web that's optimised for the front-end [and here's how to install it](http://bower.io/#install-bower). You don't really have to be familiar with bower to use the framework but it's a powerful little tool.
-- **[Sass](http://sass-lang.com/)** is a CSS preprocessor and is used for almost everything in the framework code [get it installed](http://sass-lang.com/install).
-
-####Installing it via the shell script
-1. Create your project repo (if you want to use git).
-2. Download the framework [initializer 'setup.sh' file](https://github.com/Wixel/initializer) file.
-3. Put the file in the root of your project directory.
-4. Run `./setup.sh` in your terminal.
-5. Run: `npm install`
-6. Run: `grunt`
-
-This will set up all the files and dependancies in the correct structure. There's another shell script for your Sass commands called "watch.sh" you can simply run that with `./watch.sh`. If it doesn't execute run: `chmod a+x watch.sh` and try again.
 
 ##Making use of things
 ===
@@ -173,4 +165,4 @@ Change `UA-XXXXX-X` to your site ID given by google.
 
 #####How to contribute
 
-If you spot an opportunity to improve our framework, please submit a pull request that includes instructions added to this documentation file.
+If you spot an opportunity to improve our framework, please submit a pull request.
