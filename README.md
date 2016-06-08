@@ -139,7 +139,7 @@ add the width and `.column` or `.columns` class i.e.
 .small-6, .small-12
 ```
 
-**Tablet/Medium breakpoint**: `.medium-1`, `.medium-2`, `.medium-3`, `.medium-4`, `.medium-5`, `.medium-6`, `.medium-7`, `.medium-8`, `.medium-9`, `.medium-10`, `.medium-11`, `.medium-12`
+**Tablet/Medium breakpoint**:
 
 ```
 .medium-1, .medium-7, 
@@ -150,7 +150,7 @@ add the width and `.column` or `.columns` class i.e.
 .medium-6, .medium-12
 ```
 
-**Desktop/Large breakpoint**: `.large-1`, `.large-2`, `.large-3`, `.large-4`, `.large-5`, `.large-6`, `.large-7`, `.large-8`, `.large-9`, `.large-10`, `.large-11`, `.large-12`
+**Desktop/Large breakpoint**:
 
 ```
 .large-1, .large-7, 
