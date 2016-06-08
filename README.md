@@ -130,13 +130,13 @@ add the width and `.column` or `.columns` class i.e.
 
 **Mobile/Small breakpoint:**
 
-|-------------------------|------------------|
-| .small-1                | .small-7         |
-| .small-2                | .small-8         |
-| .small-3                | .small-9         |
-| .small-4                | .small-10        |
-| .small-5                | .small-11        |
-| .small-6                | .small-12        |
+| .small-1 | .small-7  |
+|----------|-----------|
+| .small-2 | .small-8  |
+| .small-3 | .small-9  |
+| .small-4 | .small-10 |
+| .small-5 | .small-11 |
+| .small-6 | .small-12 |
 
 **Mobile/Small breakpoint**: `.small-1`, `.small-2`, `.small-3`, `.small-4`, `.small-5`, `.small-6`, `.small-7`, `.small-8`, `.small-9`, `.small-10`, `.small-11`, `.small-12`
 
