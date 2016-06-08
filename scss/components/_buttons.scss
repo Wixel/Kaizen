@@ -12,7 +12,7 @@
 	@include user-select(none);
 	@include transition(background-color 0.15s ease-in-out);
 
-	background: url(/img/cover-multi.jpg) no-repeat;
+	background: url('/img/cover-multi.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
