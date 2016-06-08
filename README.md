@@ -128,17 +128,16 @@ add the width and `.column` or `.columns` class i.e.
 
 #####Column widths
 
-**Mobile/Small breakpoint:**
-|         Mobile/Small breakpoint        |
-|---------------------|
-| .small-1 | .small-7  |
-| .small-2 | .small-8  |
-| .small-3 | .small-9  |
-| .small-4 | .small-10 |
-| .small-5 | .small-11 |
-| .small-6 | .small-12 |
+**Mobile/Small breakpoint**: 
 
-**Mobile/Small breakpoint**: `.small-1`, `.small-2`, `.small-3`, `.small-4`, `.small-5`, `.small-6`, `.small-7`, `.small-8`, `.small-9`, `.small-10`, `.small-11`, `.small-12`
+```
+.small-1, .small-7, 
+.small-2, .small-8,
+.small-3, .small-9,
+.small-4, .small-10,
+.small-5, .small-11,
+.small-6, .small-12,
+```
 
 **Tablet/Medium breakpoint**: `.medium-1`, `.medium-2`, `.medium-3`, `.medium-4`, `.medium-5`, `.medium-6`, `.medium-7`, `.medium-8`, `.medium-9`, `.medium-10`, `.medium-11`, `.medium-12`
 
