@@ -136,14 +136,33 @@ add the width and `.column` or `.columns` class i.e.
 .small-3, .small-9,
 .small-4, .small-10,
 .small-5, .small-11,
-.small-6, .small-12,
+.small-6, .small-12
 ```
 
 **Tablet/Medium breakpoint**: `.medium-1`, `.medium-2`, `.medium-3`, `.medium-4`, `.medium-5`, `.medium-6`, `.medium-7`, `.medium-8`, `.medium-9`, `.medium-10`, `.medium-11`, `.medium-12`
 
+```
+.medium-1, .medium-7, 
+.medium-2, .medium-8,
+.medium-3, .medium-9,
+.medium-4, .medium-10,
+.medium-5, .medium-11,
+.medium-6, .medium-12
+```
+
 **Desktop/Large breakpoint**: `.large-1`, `.large-2`, `.large-3`, `.large-4`, `.large-5`, `.large-6`, `.large-7`, `.large-8`, `.large-9`, `.large-10`, `.large-11`, `.large-12`
 
+```
+.large-1, .large-7, 
+.large-2, .large-8,
+.large-3, .large-9,
+.large-4, .large-10,
+.large-5, .large-11,
+.large-6, .large-12
+```
+
 #####Column helpers
+
 **Center columns:** Use `.small-centered`, `.medium-centered`, `.large-centered` since it's mobile first any column with `.small-centered` will also be center aligned in larger breakpoints to remove
 it simply add `.medium-uncentered` or `.large-uncentered`.
 
