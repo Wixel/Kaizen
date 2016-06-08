@@ -3,9 +3,11 @@
 A simple-as-possible responsive Sass (built with [Bourbon](http://bourbon.io/)) starter framework with just the right amount of features & components to [get a project started in minutes](#install).
 
 ###Why?
+
 It's about simplicity - We've built a nimble framework to get you started without the stuff you don't need. It only takes a few minutes to setup and every line of code is carefully considered with performance in mind. Think of it as the pencil instead of the blank page.
 
 ###What?
+
 It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely organized framework to build upon with just the right amount of utility and components.
 
 ##Installation
@@ -32,7 +34,7 @@ If something does happen to wrong, you can add the `-v` argument to enable more 
 
 With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.
 
-[NOTE] Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
+**[NOTE]:** Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
 
 ```css
 .button{
