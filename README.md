@@ -20,7 +20,7 @@ It's a bare-bones framework, it's meant to be hacked, modified and twisted to fi
 - **[Sass](http://sass-lang.com/)** is a CSS preprocessor and is used for almost everything in the framework code [get it installed](http://sass-lang.com/install).
 
 ####Getting started
-- Run: `gem install -g kaizen` to install the Kaizen CLI
+- Run: `gem install kaizen-cli` to install the Kaizen CLI
 - Run: `kzn [directory]` sets up the specified directory without overwriting files
 - Run: `kzn [directory] -f` sets up the specified directory and overwrites files if they already exist
 - Run: `kzn -s` - watches current directory for any changes and compiles Sass files
