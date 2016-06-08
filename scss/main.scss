@@ -32,6 +32,11 @@
 /*------------------------------------------------------------------------------
 	Custom styles
 ------------------------------------------------------------------------------*/
+code{
+	background-color: lighten($accent-color, 30%);
+	border-radius: 2px;
+}
+
 .header{
 	background-color: $soft-color;
 
@@ -63,10 +68,8 @@
 	}
 	code{
 		display: block;
-		margin-bottom: 1em;
 		padding: 5px;
-		background-color: lighten($accent-color, 30%);
-		border-radius: 2px;
+		margin-bottom: 1em;
 	}
 }
 .method{
