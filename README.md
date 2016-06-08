@@ -1,7 +1,5 @@
 #Kaizen framework
 
-===
-
 A simple-as-possible responsive Sass (built with [Bourbon](http://bourbon.io/)) starter framework with just the right amount of features & components to [get a project started in minutes](#install).
 
 ###Why?
@@ -10,29 +8,30 @@ It's about simplicity - We've built a nimble framework to get you started withou
 ###What?
 It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely organized framework to build upon with just the right amount of utility and components.
 
-##Install
-===
+##Installation
 
 ####Requirements
 
-- **[Git](https://git-scm.com/)** a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. [here's the installation guide to that](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [here's a guide if you're unfamiliar with git](http://rogerdudler.github.io/git-guide/).
-- **[Ruby](https://www.ruby-lang.org/)** [get it running on your machine](https://www.ruby-lang.org/en/downloads/).
-- **[Sass](http://sass-lang.com/)** is a CSS preprocessor and is used for almost everything in the framework code [get it installed](http://sass-lang.com/install).
+- **[Ruby](https://www.ruby-lang.org/)** 
 
 ####Getting started
+
 - Run: `gem install kaizen-cli` to install the Kaizen CLI
 - Run: `kzn [directory]` sets up the specified directory without overwriting files
 - Run: `kzn [directory] -f` sets up the specified directory and overwrites files if they already exist
-- Run: `kzn -s` - watches current directory for any changes and compiles Sass files
-- Run: `kzn [directory] -s` watches the specified directory for any changes and compiles Sass files
+- Run: `kzn -s` - watches the current directory for any changes and compiles changes to Sass files automatically
+- Run: `kzn [directory] -s` watches the specified directory for any changes and compiles changes to Sass files automatically
 - Run: `kzn --help` for further instructions
 
+If something does happen to wrong, you can add the `-v` argument to enable more verbosity. 
+
 ###Mobile first
+
 With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.
 
 [NOTE] Always add universal styles to the code outside of breakpoints and then add additional styles for screen sizes from small to large. Example:
 
-```
+```css
 .button{
 	background-color: blue;
 	padding: 20px 12px;
@@ -59,7 +58,8 @@ With mobile first, most styles are inherited from the smaller breakpoint, this k
 }
 ```
 
-###Includes
+### What's included?
+
 * Box-sizing reset. (we use [border-box](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)).
 * Simple easy to understand file structure that can easily be reorganised to work with your app.
 * A mobile first 12 column responsive grid with tablet/medium & desktop/large breakpoints.
@@ -68,10 +68,8 @@ With mobile first, most styles are inherited from the smaller breakpoint, this k
 
 The framework installs the [Bourbon](http://bourbon.io/) mixin library to extend the power of Sass. Bourbon also adds functionality like vendor prefixing, calculations eg. `px` to `REM`, `EM` for faster and easier development. It also includes [normalize.css](http://necolas.github.io/normalize.css/) as a reset to keep things consistent across modern browsers (IE8+, ofcourse).
 
+## How to use the framework
 
-
-##Making use of things
-===
 We use the SCSS syntax of Sass. All settings are in *_base.scss*. It's best to change these settings to align with your design before starting on the project.
 
 ###Using the typography:
