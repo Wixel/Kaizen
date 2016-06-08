@@ -38,8 +38,8 @@
 	// Child rows
 	.row{
 		width: auto;
-    margin-left: -$gutter-size;
-    margin-right: -$gutter-size;
+    // margin-left: -$gutter-size;
+    // margin-right: -$gutter-size;
     max-width: none;
     &:before, &:after{
     	content: " ";
