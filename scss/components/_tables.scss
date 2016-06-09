@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------------------
+	Responsive tables
+	- Add `data-heading` to column cells
+	- Tables are not mobile-fist since it takes to much code to overwrite the
+		defaults
+------------------------------------------------------------------------------*/
+table{
+  width: 100%;
+}
+td, th{
+	padding: 0.5rem;
+	text-align: left;
+}
+th {
+	text-align: left;
+	font-weight: 400;
+	font-size: rem(18);
+	border-bottom: 2px solid $soft-color;
+}
+
+tr{
+	&:hover{
+		background-color: darken($secondary-color, 3%);
+	}
+}
+
+@media only screen and (max-width: $medium-breakpoint){
+  th{
+		display: none;
+	}
+  td{
+    display: block;
+    padding: 0.5rem 0;
+  }
+  tr{
+    margin: 0.25rem 1rem;
+    padding: 0.5rem 0;
+    display: block;
+    border-bottom: 2px solid $soft-color;
+  }
+  td:before {
+    content: attr(data-heading);
+    display: inline-block;
+    width: 5rem;
+    margin-right: 0.5rem;
+    color: darken($soft-color, 20%);
+    font-size: rem(11);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: text-top;
+  }
+}

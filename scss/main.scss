@@ -25,6 +25,15 @@
   - they're disabled by default for performance
 ------------------------------------------------------------------------------*/
 // Buttons
-// @import 'components/buttons';
+@import 'components/buttons';
 // Form fields/inputs
-// @import 'components/forms';
+@import 'components/forms';
+// Responsive tables
+@import 'components/tables';
+
+
+/*------------------------------------------------------------------------------
+	Your custom app styles
+	- We recommend using balanced mix of OOCSS & BEM for your class names, this
+		will keep your codebase light, reusable and easy to maintain.
+------------------------------------------------------------------------------*/
