@@ -2,3 +2,4 @@
 .sass-cache/*
 scss/vendor/*
 css/main.css
+.DS_Store
