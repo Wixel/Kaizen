@@ -18,17 +18,17 @@ gem install kaizen-cli
 
 ####Requirements
 
-- **[Ruby](https://www.ruby-lang.org/)** 
+- **[Ruby](https://www.ruby-lang.org/)**
 
 ####Getting started
 
-- Run: `kzn [directory]` sets up the specified directory without overwriting files
-- Run: `kzn [directory] -f` sets up the specified directory and overwrites files if they already exist
-- Run: `kzn -s` - watches the current directory for any changes and compiles changes to Sass files automatically
-- Run: `kzn [directory] -s` watches the specified directory for any changes and compiles changes to Sass files automatically
+- Run: `kzn [directory] -n` - Create a new Kaizen project in the specified directory
+- Run: `kzn [directory] -f` - Overwrite files that already exist in the target directory
+- Run: `kzn [directory] -w` - Watch the specified directory for Sass changes and compile them automatically
+- Run: `kzn [directory] -s` - Start serving the specified directory from the built-in web server
 - Run: `kzn --help` for further instructions
 
-If something does happen to wrong, you can add the `-v` argument to enable more verbosity. 
+If something does happen to go wrong, you can add the `-v` argument to enable more verbosity.
 
 ###Mobile first
 
@@ -128,10 +128,10 @@ add the width and `.column` or `.columns` class i.e.
 
 #####Column widths
 
-**Mobile/Small breakpoint**: 
+**Mobile/Small breakpoint**:
 
 ```
-.small-1, .small-7, 
+.small-1, .small-7,
 .small-2, .small-8,
 .small-3, .small-9,
 .small-4, .small-10,
@@ -142,7 +142,7 @@ add the width and `.column` or `.columns` class i.e.
 **Tablet/Medium breakpoint**:
 
 ```
-.medium-1, .medium-7, 
+.medium-1, .medium-7,
 .medium-2, .medium-8,
 .medium-3, .medium-9,
 .medium-4, .medium-10,
@@ -153,7 +153,7 @@ add the width and `.column` or `.columns` class i.e.
 **Desktop/Large breakpoint**:
 
 ```
-.large-1, .large-7, 
+.large-1, .large-7,
 .large-2, .large-8,
 .large-3, .large-9,
 .large-4, .large-10,
