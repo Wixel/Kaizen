@@ -1,0 +1,85 @@
+###Name:
+
+Kaizen
+
+###Intro:
+
+a Japanese term that means “continuous improvement.” Kaizen (KYE-zen) is an effort to do things faster and more efficiently. On the factory floor, workers in Japanese factories are encouraged to provide feedback and suggestions, often taking time at the end of their shifts to brainstorm ideas. To “kaizen” a problem means to dissect it and come up with solutions.
+
+###Methodology:
+
+- OOCSS
+- BEM
+
+###Tech:
+
+- Sass
+- Bourbon
+
+---
+
+
+###Why?
+
+It's about simplicity - We've built a nimble framework to get you started without the stuff you don't need. It only takes a few minutes to setup and every line of code is carefully considered with performance in mind. Think of it as the pencil instead of the blank page.
+
+###What?
+
+It's a bare-bones framework, it's meant to be hacked, modified and twisted to fit within your project yet it provides you with an extremely organized framework to build upon with just the right amount of utility and components.
+
+###HOW?
+
+If you're already using Sass, you likely have Ruby installed. To use Kaizen simply install it:
+
+```
+gem install kaizen-cli
+```
+To learn how to use the Kaizen CLI run:
+
+```
+kzn --help
+```
+---
+
+###SEIRI
+(ORGANIZATION)
+
+Keep just what is needed. Clearly distinguish between what is required and what should be optional.
+
+###SEITON
+(ORDERLINESS)
+
+Have a place for everything and implement a system whereby everything is in its place. Organize in a way that ensures that necessary things are easily accessible.
+
+###SEISO
+(CLEANLINESS)
+
+This can be viewed as systematic clearing where everything is continuesly improved, tested and maintained on a regular basis.
+
+###SEIKETSU
+(STANDARDISATION)
+
+Establish methods that will ensure the effective continuation of steps 1 through 3.
+
+---
+
+###MOBILE-FIRST
+
+With mobile first, most styles are inherited from the smaller breakpoint, this keeps code light and manageable.
+
+###TYPOGRAPHY
+
+Typography reset, some utilities like .text-center and easily configurable settings.
+
+###UNSTYLED
+
+There's no need to remove styles, simply add your brand colors to the Kaizen framework.
+
+###PERFORMANCE
+
+Optional components are disabled by default, with a base stylesheet of ~7kb.
+
+###Footer
+
+This project is maintained by Wixel
+
