@@ -84,21 +84,25 @@
     <main>
       <!-- All inline styles are only for display purposes, don't use inline styles -->
       <section class="text-center padds-top-medium" style="background-color: #E3E3E5;">
-        <div class="row">
-          <div class="small-12 columns">
-            <h1 class="padds-bottom-small">Hello world! This is a basic HTML5 &amp; Sass framework to get things going.</h1>
+        <div class="row row-columns-center">
+          <div class="small-12 medium-8 large-7 column">
+            <h1 style="font-size: 10vw;">KAIZEN</h1>
+            <h2 class="padds-bottom-small">Hello world! This is a basic HTML5 &amp; Sass framework to get things going.</h2>
             <a href="#features" class="button">Features</a>
             <a href="https://github.com/Wixel/kaizen" target="_blank" class="button button-alt">Github/Docs</a>
-            <div class="row">
-              <div class="small-12 medium-10 medium-centered columns padds-top-medium">
-                <p style="font-size: 13px;">If you didn't install the Kaizen framework via the Kaizen CLI please <a href="https://github.com/Wixel/kaizen/#install" target="_blank">Read this on how to use the framework</a>.</p>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="row row-columns-center">
+          <div class="small-12 medium-10 medium-centered column">
+            <p style="font-size: 13px;" class="padds-top-medium">If you didn't install the Kaizen framework via the Kaizen CLI please <a href="https://github.com/Wixel/kaizen/#install" target="_blank">Read this on how to use the framework</a>.</p>
           </div>
         </div>
       </section>
-      <section id="features" style="border-bottom: 2px solid #E3E3E5;" class="small-12 columns text-center padds-top-medium padds-bottom-medium">
-        <h2>12 Column Grid</h2>
+      <section id="features" style="border-bottom: 2px solid #E3E3E5;" class="text-center padds-top-medium padds-bottom-medium">
+        <h2>12 Column Resposnive Flexbox Grid</h2>
+        <p>
+          Flexbox grid has a fallback for older browsers
+        </p>
         <div class="row">
           <div class="small-12 medium-2 large-1 columns">
             <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">1 column</div>
@@ -152,8 +156,38 @@
             <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-6 .medium-6 .large-3</div>
           </div>
         </div>
+        <h4 class="padds-top-small">Full width grid</h4>
+        <div class="row full-width">
+          <div class="small-12 medium-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-12 .medium-6 .large-3</div>
+          </div>
+          <div class="small-12 medium-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-12 .medium-6 .large-3</div>
+          </div>
+          <div class="small-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-6 .medium-6 .large-3</div>
+          </div>
+          <div class="small-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-6 .medium-6 .large-3</div>
+          </div>
+        </div>
+        <h4 class="padds-top-small">Full width collapsed grid</h4>
+        <div class="row full-width collapse">
+          <div class="small-12 medium-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-12 .medium-6 .large-3</div>
+          </div>
+          <div class="small-12 medium-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-12 .medium-6 .large-3</div>
+          </div>
+          <div class="small-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-6 .medium-6 .large-3</div>
+          </div>
+          <div class="small-6 large-3 columns">
+            <div style="background-color: #E3E3E5; padding: 0.72917rem 0;margin-bottom: 5px;" class=" text-center">.small-6 .medium-6 .large-3</div>
+          </div>
+        </div>
       </section>
-      <section style="border-bottom: 2px solid #E3E3E5;" class="small-12 columns text-center padds-top-medium padds-bottom-medium">
+      <section style="border-bottom: 2px solid #E3E3E5;" class="text-center padds-top-medium padds-bottom-medium">
         <h2>Buttons</h2>
         <small>If you're seeing unstyled markup enable the components in main.scss</small>
         <div class="row">
@@ -171,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section style="border-bottom: 2px solid #E3E3E5;" class="small-12 columns text-center padds-top-medium padds-bottom-medium">
+      <section style="border-bottom: 2px solid #E3E3E5;" class="text-center padds-top-medium padds-bottom-medium">
         <h2>Form Fields</h2>
         <small>If you're seeing unstyled markup enable the components in main.scss</small>
         <form class="row">
@@ -224,7 +258,7 @@
           </div>
         </form>
       </section>
-      <section style="border-bottom: 2px solid #E3E3E5;" class="small-12 columns text-center padds-top-medium padds-bottom-medium">
+      <section style="border-bottom: 2px solid #E3E3E5;" class="text-center padds-top-medium padds-bottom-medium">
         <h2>Responsive Tables</h2>
         <small>If you're seeing unstyled markup enable the components in main.scss</small>
         <div class="row">
