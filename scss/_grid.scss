@@ -328,6 +328,15 @@
 	  padding: 0 $gutter-size;
 	}
 
+/*------------------------------------------------------------------------------
+	Grid helpers
+	- You can easily create more, we've commented out one example
+------------------------------------------------------------------------------*/
+.row-columns-center{
+  [class*="column"],  [class*="columns"]{
+    margin: 0 auto;
+  }
+}
 
 /*------------------------------------------------------------------------------
 	Generate grids
