@@ -67,7 +67,7 @@ With mobile first, most styles are inherited from the smaller breakpoint, this k
 
 * Box-sizing reset. (we use [border-box](http://www.paulirish.com/2012/box-sizing-border-box-ftw/)).
 * Simple easy to understand file structure that can easily be reorganised to work with your app.
-* A mobile first 12 column responsive grid with tablet/medium & desktop/large breakpoints.
+* A mobile first 12 column flexbox responsive grid with mobile/small, tablet/medium & desktop/large breakpoints.
 * Typography reset with some tools and easily configurable settings.
 * Small set of base settings for color, spacing etc.
 
