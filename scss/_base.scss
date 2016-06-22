@@ -23,7 +23,7 @@ $header-line-height: 1.4 !default;
 $header-top-margin: 0.2rem !default;
 $header-bottom-margin: 1.4rem !default;
 $header-font-weight: 400;
-$size-ratio: 1.15;
+$size-ratio: 1.15; // This will set the sizing ratio between font sizes
 
 // Heading font sizes are calculated from the base font upwards
 $h6-font-size: $body-font-size*$size-ratio !default;
@@ -31,7 +31,7 @@ $h5-font-size: $h6-font-size*$size-ratio !default;
 $h4-font-size: $h5-font-size*$size-ratio !default;
 $h3-font-size: $h4-font-size*$size-ratio !default;
 $h2-font-size: $h3-font-size*$size-ratio !default;
-$h1-font-size: $h2-font-size*$size-ratio !default; // @TODO Make it increase with the base font size (small to large - h6 h5 h4 etc)
+$h1-font-size: $h2-font-size*$size-ratio !default;
 
 $font-smoothing: false; // Enable/Disable font-smoothing
 
