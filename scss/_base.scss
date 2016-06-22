@@ -13,29 +13,31 @@ $body-font-stack: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /*------------------------------------------------------------------------------
 	Typography settings
 ------------------------------------------------------------------------------*/
+// base font styles
+$body-font-size: 16px;
+$body-font-weight: 300;
+$body-line-height: 1.4;
 
 // Headings
 $header-line-height: 1.4 !default;
-$header-top-margin: .2rem !default;
+$header-top-margin: 0.2rem !default;
 $header-bottom-margin: 1.4rem !default;
 $header-font-weight: 400;
-$h1-font-size: rem(35) !default;
-$h2-font-size: rem(28) !default;
-$h3-font-size: rem(24) !default;
-$h4-font-size: rem(22) !default;
-$h5-font-size: rem(18) !default;
-$h6-font-size: rem(16) !default;
+$size-ratio: 1.15;
 
-// base font styles
-$body-font-size: 100%;
-$body-font-weight: 300;
-$body-line-height: 1.4;
+// Heading font sizes are calculated from the base font upwards
+$h6-font-size: $body-font-size*$size-ratio !default;
+$h5-font-size: $h6-font-size*$size-ratio !default;
+$h4-font-size: $h5-font-size*$size-ratio !default;
+$h3-font-size: $h4-font-size*$size-ratio !default;
+$h2-font-size: $h3-font-size*$size-ratio !default;
+$h1-font-size: $h2-font-size*$size-ratio !default; // @TODO Make it increase with the base font size (small to large - h6 h5 h4 etc)
 
 $font-smoothing: false; // Enable/Disable font-smoothing
 
 // paragraph font styles
 $paragraph-line-height: 1.6;
-$paragraph-font-size: rem(18);
+$paragraph-font-size: rem($body-font-size);
 
 /*------------------------------------------------------------------------------
 	Grid settings
@@ -75,7 +77,6 @@ $large-space: $medium-space * 2;
 	- Button settings
 ------------------------------------------------------------------------------*/
 
-// Buttons
 
 
 /*------------------------------------------------------------------------------

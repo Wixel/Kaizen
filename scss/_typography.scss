@@ -1,75 +1,135 @@
-// Typography resets
+/*------------------------------------------------------------------------------
+	Typography resets
+------------------------------------------------------------------------------*/
 div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td{
   margin: 0;
   padding: 0;
 }
-// highlight
+
+/*------------------------------------------------------------------------------
+	Text Highlight
+------------------------------------------------------------------------------*/
 ::-moz-selection {
   background: $primary-color;
   color: $secondary-color;
   text-shadow: none;
 }
-
 ::selection {
   background: $primary-color;
   color: $secondary-color;
   text-shadow: none;
 }
-// Body text styling
-// add this to body using @extend %body-type;
+
+/*------------------------------------------------------------------------------
+	Base/body content styles
+  - add this to body using @extend %body-type;
+------------------------------------------------------------------------------*/
 %body-type{
 	color: $primary-color;
+  font-size: $body-font-size / $size-ratio;
 	font-weight: $body-font-weight;
 	line-height: $body-line-height;
-	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeSpeed; //change to "optimizeLegibility" for better rendering - impacts performance
+  @media only screen and (min-width: $medium-breakpoint){
+    font-size: $body-font-size;
+		font-size: rem($body-font-size);
+	}
 }
-// headings
+
+/*------------------------------------------------------------------------------
+	Headings
+------------------------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6{
 	b, strong{
 		font-weight: 700;
 	}
 	font-family: $header-font-stack;
 	font-weight: $header-font-weight;
-	margin-top:$header-top-margin;
-	margin-bottom:$header-bottom-margin;
+	margin-top: $header-top-margin;
+	margin-bottom: $header-bottom-margin;
 }
 // reduce headings size on smaller screens
-h1{font-size: $h1-font-size / 1.2;}
-h2{font-size: $h2-font-size / 1.2;}
-h3{font-size: $h3-font-size / 1.2;}
-h4{font-size: $h4-font-size / 1.2;}
-h5{font-size: $h5-font-size / 1.2;}
-h6{font-size: $h6-font-size / 1.2;}
-// links
+h1{
+  font-size: $h1-font-size / $size-ratio;
+}
+h2{
+  font-size: $h2-font-size / $size-ratio;
+}
+h3{
+  font-size: $h3-font-size / $size-ratio;
+}
+h4{
+  font-size: $h4-font-size / $size-ratio;
+}
+h5{
+  font-size: $h5-font-size / $size-ratio;
+}
+h6{
+  font-size: $h6-font-size / $size-ratio;
+}
+
+/*------------------------------------------------------------------------------
+	Misc
+------------------------------------------------------------------------------*/
+
+// Anchor/Links
 a{
 	text-decoration:none;
-	color: inherit;
+	color: $accent-color;
 	line-height: inherit;
+
+  // Hover interaction
 	&:hover, &:focus{
-		color: $accent-color;
+		color: darken($accent-color, 10%);
 	}
 }
-// paragraphs
+
+// Lists
+ul, ol{
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+  li{
+    margin-bottom: 0.5rem;
+  }
+/*------------------------------------------------------------------------------
+	Paragraphs
+------------------------------------------------------------------------------*/
 p{
 	font-family: inherit;
 	line-height: $paragraph-line-height;
-	font-size: $paragraph-font-size /1.125;
+  margin-top: $header-top-margin;
 	margin-bottom: 2rem;
-	@media only screen and (min-width: $medium-breakpoint){
-		font-size: $paragraph-font-size;
-	}
+
 }
 b, strong{
 	font-weight: 400;
 }
 
-// helpers
+/*------------------------------------------------------------------------------
+	Typography Helpers
+------------------------------------------------------------------------------*/
+
+// Removes dots from list blocks
 .no-style-list{
-	list-style:none;
+	list-style: none;
 }
 // responsive text alignment
 .text{
+  // Drop cap
+  &-dropcap{
+    &:first-letter{
+      float: left;
+      margin: $small-space/4;
+      padding: $small-space/4;
+      margin-left: 0;
+      padding-left: 0;
+      line-height: $paragraph-line-height/2;
+      font-size: rem($h1-font-size*2);
+      font-weight: 400;
+      color: $primary-color;
+    }
+  }
 	&-left{
 		text-align: left;
 
@@ -92,31 +152,6 @@ b, strong{
     }
 	}
 }
-// @media only screen and (max-width: $medium-breakpoint){
-// 	.small-only-text{
-// 		&-left{
-// 			text-align: left;
-//
-//       .column, .columns{
-//         text-align: left;
-//       }
-// 		}
-// 		&-center{
-// 			text-align: center;
-//
-//       .column, .columns{
-//         text-align: center;
-//       }
-// 		}
-// 		&-right{
-// 			text-align: right;
-//
-//       .column, .columns{
-//         text-align: right;
-//       }
-// 		}
-// 	}
-// }
 @media only screen{
 	.small-text{
 		&-left{
@@ -142,31 +177,6 @@ b, strong{
 		}
 	}
 }
-// @media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint){
-// 	.medium-only-text{
-// 		&-left{
-// 			text-align: left;
-//
-//       .column, .columns{
-//         text-align: left;
-//       }
-// 		}
-// 		&-center{
-// 			text-align: center;
-//
-//       .column, .columns{
-//         text-align: center;
-//       }
-// 		}
-// 		&-right{
-// 			text-align: right;
-//
-//       .column, .columns{
-//         text-align: right;
-//       }
-// 		}
-// 	}
-// }
 @media only screen and (min-width: $medium-breakpoint){
 	.medium-text{
 		&-left{
@@ -191,12 +201,33 @@ b, strong{
       }
 		}
 	}
-	h1{font-size: $h1-font-size;}
-	h2{font-size: $h2-font-size;}
-	h3{font-size: $h3-font-size;}
-	h4{font-size: $h4-font-size;}
-	h5{font-size: $h5-font-size;}
-	h6{font-size: $h6-font-size;}
+
+  // Not a helper but combined in the MQ to reduce file size
+  // - Increases font size on larger displays.
+	h1{
+    font-size: $h1-font-size;
+    font-size: rem($h1-font-size);
+  }
+	h2{
+    font-size: $h2-font-size;
+    font-size: rem($h2-font-size);
+  }
+	h3{
+    font-size: $h3-font-size;
+    font-size: rem($h3-font-size);
+  }
+	h4{
+    font-size: $h4-font-size;
+    font-size: rem($h4-font-size);
+  }
+	h5{
+    font-size: $h5-font-size;
+    font-size: rem($h5-font-size);
+  }
+	h6{
+    font-size: $h6-font-size;
+    font-size: rem($h6-font-size);
+  }
 }
 @media only screen and (min-width: $large-breakpoint){
 	.large-text{
