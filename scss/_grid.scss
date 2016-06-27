@@ -1,60 +1,20 @@
 /*------------------------------------------------------------------------------
 	Grid
 	Usage:
-		- '.full-width' Fill container and ignore max-width constraint
-		- '.collapse' removes gutters from child columns
 		- Default breakpoint grids are set at the bottom of this page
-
-	Acknowledgements:
-	We have taken a lot of inspiration from Lee Jordan's Reflex grid, we suggest
-	you check it out if you're only looking for a grid.
-	https://github.com/leejordan/reflex
 ------------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------------
-	Grid helpers
-	- .row-center-columns will center align all columns in the row
-------------------------------------------------------------------------------*/
-.row-center-columns{
-  [class*="column"],  [class*="columns"]{
-    margin: 0 auto;
-  }
-}
 
 /*------------------------------------------------------------------------------
 	Grid mixins
+  - These are used to construct the columns and breakpoints
 ------------------------------------------------------------------------------*/
-@mixin setupWhitespace() {
-  letter-spacing: -0.31em !important;
-  *letter-spacing: normal !important;
-  word-spacing: -0.43em !important;
-}
-@mixin resetWhitespace() {
-  letter-spacing: normal;
-  word-spacing: normal;
-  white-space: normal;
-}
-@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
-  @if $basis == 0px {
-		-ms-flex: $grow $shrink $basis;
-    -webkit-flex: $grow $shrink $basis;
-    flex: $grow $shrink $basis;
-  } @else{
-		-ms-flex: $grow $shrink auto; //ie10 needs auto
-    -webkit-flex: $grow $shrink $basis;
-    flex: $grow $shrink $basis;
-	}
-}
 @mixin calc-columns($index, $class, $type) {
   @if $type == width and $index > 0 {
     .#{$class}#{$index} {
-      width: percentage(($index / $columns));
-      *width: percentage(($index / $columns)) - 0.1;
+      max-width: percentage(($index / $columns));
+      @include flex-basis(percentage(($index / $columns)));
     }
   }
-}
-@mixin make-grid($class) {
-  @include loop-columns($columns, $class, width);
 }
 @mixin loop-columns($index, $class, $type) {
   @if $index >= 0 {
@@ -63,80 +23,105 @@
     @include loop-columns(($index - 1), $class, $type);
   }
 }
-@mixin resetTextAlign() {
-  // We want to reset any text-align properties set by the grid
-  // (required for the inline-block fallback)
-  // but we don't want to override any text-align properties
-  // set on the individual grid__col-x element
-  // or on any of it's child elements
-  //
-  // The "initial" property is not widely supported so a default of "left" and "start" is provided
-  // http://caniuse.com/#search=initial
-  //
-  // 1) set to left by default (works everywhere)
-  // 2) set to start (respects right to left text)
-  // 3) set to initial
-  //
-  text-align: left;
-  text-align: start;
-  text-align: initial;
-  -moz-text-align-last: left;
-  -moz-text-align-last: start;
-  -moz-text-align-last: initial;
-  text-align-last: left;
-  text-align-last: start;
-  text-align-last: initial;
+@mixin make-grid($class) {
+  // Build columns
+  @include loop-columns($columns, $class, width);
 }
 
 /*------------------------------------------------------------------------------
 	Building blocks for grid
 ------------------------------------------------------------------------------*/
-// Container .row
+// Container/Row
 .row{
-	@include display(flex);
-	@include flex-wrap(wrap);
-	padding: 0;
-	margin: 0 auto;
-	position: relative;
-	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include display(flex);
+  @include flex(0 1 auto);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
 	max-width: $max-width;
 
-	@include setupWhitespace();
+  /*----------------------------------------------------------------------------
+  	Grid helpers
+    - .row-full will fill container and ignore max-width constraint
+    - .row-reverse will reverse the order
+    - .row-collapse will removing whitespace from columns
+    - .row-center will center align all columns in the row
+  	- .row-right will right align all columns in the row
+  ----------------------------------------------------------------------------*/
+  &-full{
+    max-width: 100%;
+  }
 
-	&:before,
-	&:after{
-		@include resetWhitespace();
+  // Columns
+  &-reverse{
+    @include flex-direction(row-reverse);
+  }
+  &-collapse{
+    .column, .columns{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  // Horizontal
+  // &-left{
+  //   @include justify-content(start);
+  // }
+  &-center{
+    @include justify-content(center);
+    .column, .columns{
+      margin: 0 auto;
+    }
+  }
+  &-right{
+    @include justify-content(flex-end);
+  }
+  &-justify{
+    @include justify-content(space-between);
+  }
+  // Verical
+  &-top{
+    @include align-items(flex-start);
+  }
+  &-middle{
+    @include align-items(center);
+  }
+  &-bottom{
+    @include align-items(flex-end);
+  }
+
+
+  // @TODO: Remove legacy code
+  &-center-columns{
+    [class*="column"],  [class*="columns"]{
+      margin: 0 auto;
+    }
+  }
+  &.full-width{
 		max-width: 100%;
 	}
-
-	// nested rows
-	.row{
-		@include flex(1, 1, auto);
-	}
-
-	// Fill display by adding full-width class to row
-	&.full-width{
-		max-width: 100%;
-	}
-
-	// Removes gutters/padding from child columns
 	&.collapse > .column, &.collapse > .columns{
 		padding-left: 0;
     padding-right: 0;
 	}
+  // ------------------------
 }
-
-	// General Column styles
-	[class*="column"],  [class*="columns"]{
-		@include display(flex);
-	  @include flex-direction(column);
-	  @include resetTextAlign();
-	  @include resetWhitespace();
-	  position: relative;
-	  width: 100%;
-	  vertical-align: top;
-	  padding: 0 $gutter-size;
-	}
+  // Columns/Children
+  .column, .columns{
+    // @include display(flex);
+    @include flex(0 0 auto);
+    padding: 0 $gutter-size;
+  }
+  	// Auto width columns
+    .column{
+      @include flex-grow(1);
+      @include flex-basis(0);
+      max-width: 100%;
+    }
+    // Set width columns
+  	.columns{
+  	  width: 100%;
+  	}
 
 /*------------------------------------------------------------------------------
 	Generate grids
