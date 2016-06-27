@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------------------
-	Wixel Framework
-  - a simple responsive framework.
+	Kaizen Framework
+  - a simple responsive Sass framework.
 ------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------
@@ -8,19 +8,20 @@
 ------------------------------------------------------------------------------*/
 // We love using bourbon, it follows our lightweight and simple approach.
 @import 'vendor/bourbon/bourbon';
-// load normalize.css - place in vendor directory and rename to _normalize.scss
+// load normalize.css CSS reset
 @import 'vendor/normalize';
-// this is the settings file & contains css that needs to load first
+// this is the settings file & contains CSS that needs to load first
 @import 'base';
 // helpers to simplify development
 @import 'helpers';
 // load the incredibly easy to use grid
 @import 'grid';
-// load typography - really powerful yet small typography framework: all the power lies in the settings file
+// load typography - really powerful yet small typography framework: all the
+// power lies in the base settings file
 @import 'typography';
 
 /*------------------------------------------------------------------------------
-	Wixel framework optional components
+	Kaizen framework optional components
   - uncomment them to enable components
   - they're disabled by default for performance
 ------------------------------------------------------------------------------*/
@@ -28,9 +29,13 @@
 @import 'components/buttons';
 // Form fields/inputs
 // @import 'components/forms';
+// Responsive tables
+// @import 'components/tables';
 
 /*------------------------------------------------------------------------------
-	Custom styles
+	Your custom app styles
+	- We recommend using balanced mix of OOCSS & BEM for your class names, this
+		will keep your codebase light, reusable and easy to maintain.
 ------------------------------------------------------------------------------*/
 code{
 	background-color: lighten($accent-color, 30%);
@@ -118,7 +123,7 @@ code{
 @media only screen and (min-width: $large-breakpoint){
 	.header{
 		&-subtitle{
-			letter-spacing: 0.43em;
+			letter-spacing: 0.3em;
 		}
 	}
 }
