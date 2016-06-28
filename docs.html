@@ -80,18 +80,42 @@
         &nbsp;
       </div>
       <nav class="doc-nav small-4 medium-2 columns">
-        <h2 class="doc-nav-header text-center">KAIZEN</h2>
-        <!-- <a class="doc-nav-item doc-nav-item-heading" href="#general">General</a> -->
+        <a href="/"><h2 class="doc-nav-header text-center">KAIZEN</h2></a>
+        <a class="doc-nav-item doc-nav-item-heading" href="#general">General</a>
+        <a class="doc-nav-item" href="#started">Getting Started</a>
         <!-- <a class="doc-nav-item" href="#favicons">Favicons</a> -->
         <!-- <a class="doc-nav-item" href="#metatags">Meta tags</a> -->
         <!-- <a class="doc-nav-item" href="#">Open Graph</a> -->
         <a class="doc-nav-item doc-nav-item-heading" href="#grid">Grid</a>
         <a class="doc-nav-item" href="#alignment">Alignment</a>
+        <a class="doc-nav-item" href="#helpers">Helpers</a>
         <a class="doc-nav-item" href="#breakpoints">Breakpoints</a>
+        <div class="doc-nav-item text-center">
+          <a href="https://github.com/Wixel/Kaizen" class="button button-small button-block button-alt">Contribute</a>
+        </div>
       </nav>
       <section class="doc-content small-8 medium-10 columns">
         <div class="row">
           <div class="small-12 columns">
+            <article id="started" class="doc-article">
+              <h3>Getting started</h3>
+              <p>
+                A simple-as-possible responsive Sass starter framework that's been built with Bourbon with just the right amount of features &amp; components to get a project started in minutes.
+              </p>
+              <p>
+                Install the Kaizen CLI: <code>gem install kaizen-cli</code>
+              </p>
+              <ul>
+                <li>Run: <code>kzn [directory] -n</code> - Create a new Kaizen project in the specified directory</li>
+                <li>Run: <code>kzn [directory] -f</code> - Overwrite files that already exist in the target directory</li>
+                <li>Run: <code>kzn [directory] -w</code> - Watch the specified directory for Sass changes and compile them automatically</li>
+                <li>Run: <code>kzn [directory] -s</code> - Start serving the specified directory from the built-in web server</li>
+                <li>Run: <code>kzn --help</code> for further instructions</li>
+              </ul>
+              <p>
+                If something does happen to go wrong, you can add the <code>-v</code> argument to enable more verbosity.
+              </p>
+            </article>
             <article id="grid" class="doc-article">
               <h3>Responsive Flexbox Grid</h3>
               <p>
