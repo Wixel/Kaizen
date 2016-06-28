@@ -94,6 +94,7 @@
         <a class="doc-nav-item" href="#breakpoints">Breakpoints</a>
         <a class="doc-nav-item doc-nav-item-heading" href="#components">Components</a>
         <a class="doc-nav-item" href="#buttons">Buttons</a>
+        <a class="doc-nav-item" href="#tables">Tables</a>
 
         <div class="doc-nav-item text-center">
           <a href="https://github.com/Wixel/Kaizen" class="button button-small button-block button-alt">Contribute</a>
@@ -439,7 +440,7 @@
                 Components are disabled by default, we've purposefully done this to keep the framework small, to enable them uncomment them in <code>main.scss</code>
               </p>
             </article>
-            <article id="components" class="doc-article">
+            <article id="buttons" class="doc-article">
               <h3>Buttons</h3>
               <h5><code>.button</code></h5>
               <button class="button">Button</button>
@@ -456,6 +457,39 @@
               <button class="button button-tiny">Button</button>
               <button class="button button-small">Button</button>
               <button class="button button-large">Button</button>
+            </article>
+            <article id="tables" class="doc-article">
+              <h3>Responsive Tables</h3>
+              <p>
+                Unstyled responsive table that will work on small to large displays. For mobile we use <code>data-heading</code> to apply cell headings, no need for extra classes on JavaScript to make it work.
+              </p>
+              <table>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Side</th>
+              </tr>
+              <tr>
+                <td data-heading="Name">Darth Vader</td>
+                <td data-heading="Type">Human</td>
+                <td data-heading="Grade">Dark</td>
+              </tr>
+              <tr>
+                <td data-heading="Name">Princess Leia</td>
+                <td data-heading="Type">Human</td>
+                <td data-heading="Grade">Light</td>
+              </tr>
+              <tr>
+                <td data-heading="Name">R2-D2</td>
+                <td data-heading="Type">Droid</td>
+                <td data-heading="Grade">Light</td>
+              </tr>
+              <tr>
+                <td data-heading="Name">Luke Skywalker</td>
+                <td data-heading="Type">Human</td>
+                <td data-heading="Grade">Light</td>
+              </tr>
+            </table>
             </article>
           </div>
         </div>
