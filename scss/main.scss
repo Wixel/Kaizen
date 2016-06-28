@@ -28,7 +28,7 @@
 // Buttons
 @import 'components/buttons';
 // Form fields/inputs
-// @import 'components/forms';
+@import 'components/forms';
 // Responsive tables
 @import 'components/tables';
 
@@ -165,6 +165,13 @@ pre{
 	&-article{
 		padding: $gutter-size;
 		border-bottom: 2px solid $soft-color;
+	}
+}
+.row{
+	&-form{
+		.columns{
+			padding: $gutter-size;
+		}
 	}
 }
 
