@@ -41,6 +41,10 @@ code{
 	background-color: lighten($accent-color, 30%);
 	border-radius: 2px;
 }
+pre{
+	background-color: lighten($accent-color, 30%);
+	border-radius: 2px;
+}
 
 .header{
 	background-color: $soft-color;
@@ -100,6 +104,63 @@ code{
 	}
 }
 
+/*------------------------------------------------------------------------------
+	Docs page
+------------------------------------------------------------------------------*/
+.doc{
+	&-nav{
+		background-color: $soft-color;
+		color: $secondary-color;
+		letter-spacing: 0.3px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		height: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		&-header{
+			margin: 0;
+			padding-top: $gutter-size;
+			padding-bottom: $gutter-size;
+			text-transform: uppercase;
+			color: $soft-color;
+			background: url('../img/cover-multi.jpg') no-repeat;
+			background-size: cover;
+			background-position: center bottom;
+			background-attachment: fixed;
+			// -webkit-background-clip: text;
+			// -webkit-text-fill-color: transparent;
+		}
+		&-item{
+			display: inline-block;
+			width: 100%;
+			border-bottom: 1px solid darken($soft-color, 5%);
+			padding: ($small-space/4) ($small-space/3);
+			font-size: rem(14);
+			color: $primary-color;
+
+			&-heading{
+				border-top: 1px solid darken($soft-color, 5%);
+				font-size: $body-font-size;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&-content{
+		height: 100%;
+		height: 100vh;
+		overflow: scroll;
+	}
+	&-article{
+		padding: $gutter-size;
+		border-bottom: 1px solid $soft-color;
+	}
+}
+
 
 @media only screen and (min-width: $medium-breakpoint){
 	.header{
@@ -124,6 +185,19 @@ code{
 	.header{
 		&-subtitle{
 			letter-spacing: 0.3em;
+		}
+	}
+	.doc{
+		&-nav{
+			&-header{
+				letter-spacing: 0.3em;
+			}
+			&-item{
+
+				&-heading{
+					letter-spacing: 0.3em;
+				}
+			}
 		}
 	}
 }

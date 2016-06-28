@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <!-- Doc data -->
+    <title>Docs | Kaizen framework by Wixel</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="sass simple kaizen framework front end">
+
+    <!-- Render tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+    <!-- Open graph tags -->
+    <meta property="og:site_name" content="Kaizen framework"/>
+    <meta property="og:title" content="Kaizen Front-end Framework" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Kaizen is a simple Sass framework to get projects started extremely fast" />
+    <meta property="og:url" content="http://wixel.github.io/Kaizen/" />
+    <meta property="og:image" content="img/cover-multi.jpg" />
+    <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <!-- Open Graph: http://ogp.me/ -->
+
+    <meta name="twitter:card" content="Front-end Framework">
+    <meta name="twitter:site" content="@wixelhq">
+    <meta name="twitter:url" content="http://wixel.github.io/Kaizen/">
+    <meta name="twitter:title" content="Kaizen">
+    <meta name="twitter:description" content="Kaizen is a simple Sass framework to get projects started extremely fast">
+    <meta name="twitter:image" content="img/cover-multi.jpg">
+    <!-- More info: https://dev.twitter.com/cards/getting-started -->
+    <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
+
+    <!-- DNS prefetch -->
+    <link rel="dns-prefetch" href="//google.com">
+    <link rel="dns-prefetch" href="//gstatic.com">
+    <link rel="dns-prefetch" href="//googleapis.com">
+    <link rel="dns-prefetch" href="//google-analytics.com">
+    <!-- Learn more about about Prefetching, preloading, prebrowsing: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+    <!-- Favicon tags -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicons/144-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicons/114-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicons/72-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicons/57-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicons/60-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicons/120-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicons/76-logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicons/152-logo.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="/img/favicons/196-favicon.png" />
+    <link rel="icon" type="image/png" sizes="160x160" href="/img/favicons/160-favicon.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/96-favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/16-favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/32-favicon.png" />
+    <link rel="icon" href="/img/favicons/favicon.ico" />
+
+    <!-- Android chrome & home screen settings -->
+    <meta name="theme-color" content="#E56F69">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+    <!-- Apple mobile safari & home screen settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E56F69">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="apple-touch-icon" href="/img/favicons/160-favicon.png">
+    <link rel="apple-touch-startup-image" href="/img/startup.png">
+    <!-- Pinned Site -->
+    <link rel="mask-icon" href="icon.svg" color="#27272B">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Lato:400,700,900">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <main class="row row-full row-collapse">
+      <div class="small-4 medium-2 columns">
+        &nbsp;
+      </div>
+      <nav class="doc-nav small-4 medium-2 columns">
+        <h2 class="doc-nav-header text-center">KAIZEN</h2>
+        <!-- <a class="doc-nav-item doc-nav-item-heading" href="#general">General</a> -->
+        <!-- <a class="doc-nav-item" href="#favicons">Favicons</a> -->
+        <!-- <a class="doc-nav-item" href="#metatags">Meta tags</a> -->
+        <!-- <a class="doc-nav-item" href="#">Open Graph</a> -->
+        <a class="doc-nav-item doc-nav-item-heading" href="#grid">Grid</a>
+        <a class="doc-nav-item" href="#alignment">Alignment</a>
+        <a class="doc-nav-item" href="#breakpoints">Breakpoints</a>
+      </nav>
+      <section class="doc-content small-8 medium-10 columns">
+        <div class="row">
+          <div class="small-12 columns">
+            <article id="grid" class="doc-article">
+              <h3>Responsive Flexbox Grid</h3>
+              <p>
+                We've added a 12 column grid for small, medium &amp; large displays. Simply use them with the class<br/><code>small-[column size] medium-[column size] large-[column size] columns</code>
+              </p>
+              <div class="row">
+                <div class="medium-2 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    medium-2 columns
+                  </div>
+                </div>
+                <div class="medium-10 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    medium-10 columns
+                  </div>
+                </div>
+                <div class="medium-6 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    medium-6 columns
+                  </div>
+                </div>
+                <div class="medium-6 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    medium-6 columns
+                  </div>
+                </div>
+              </div>
+              <h4 class="padds-top-small">Auto Width Column</h4>
+              <p>
+                We've also left the best feature of flexbox, add auto width columns using <code>column</code>
+              </p>
+              <div class="row">
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 2 Column
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 2 Column
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 4 Column
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 4 Column
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 4 Column
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    1 of 4 Column
+                  </div>
+                </div>
+              </div>
+              <h4 class="padds-top-small">Nested Grids</h4>
+              <div class="row" style="background-color: #f2f2f3; padding: 5px;">
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    <div class="row">
+                      <div class="column" style="background-color: #fceceb; margin: 5px; padding: 5px; color: #fff;">
+                        Auto
+                      </div>
+                      <div class="column" style="background-color: #fceceb; margin: 5px; padding: 5px; color: #fff;">
+                        Auto
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    <div class="row">
+                      <div class="small-4 columns" style="background-color: #fceceb; border: 5px solid #E3E3E5; padding: 5px; color: #fff;">
+                        4 Columns
+                      </div>
+                      <div class="small-8 columns" style="background-color: #fceceb; border: 5px solid #E3E3E5; padding: 5px; color: #fff;">
+                        8 Columns
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article id="alignment" class="doc-article">
+              <h4 class="padds-top-small">Horizontal Alignment</h4>
+              <h5><code>.row-center</code></h5>
+              <div class="row row-center" style="background-color: #f2f2f3; padding: 5px;">
+                <div class="medium-8 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Center Aligned Column
+                  </div>
+                </div>
+              </div>
+              <h5 class="padds-top-small"><code>.row-right</code></h5>
+              <div class="row row-right" style="background-color: #f2f2f3; padding: 5px;">
+                <div class="medium-3 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Right Aligned Column
+                  </div>
+                </div>
+                <div class="medium-3 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Right Aligned Column
+                  </div>
+                </div>
+                <div class="medium-4 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Right Aligned Column
+                  </div>
+                </div>
+              </div>
+              <h5 class="padds-top-small"><code>.row-justify</code></h5>
+              <div class="row row-justify" style="background-color: #f2f2f3; padding: 5px;">
+                <div class="medium-3 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Justify Column
+                  </div>
+                </div>
+                <div class="medium-3 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Justify Column
+                  </div>
+                </div>
+                <div class="medium-3 columns">
+                  <div class="text-center" style="background-color: #E3E3E5; margin: 5px; padding: 5px; color: #fff;">
+                    Justify Column
+                  </div>
+                </div>
+              </div>
+              <h4 class="padds-top-small">Vertical Alignment</h4>
+              <h5><code>.row-top</code></h5>
+              <div class="row row-top" style="background-color: #f2f2f3; padding: 5px; height: 100px;">
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff; height: 90px;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+              </div>
+              <h5 class="padds-top-small"><code>.row-middle</code></h5>
+              <div class="row row-middle" style="background-color: #f2f2f3; padding: 5px; height: 100px;">
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff; height: 90px;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+              </div>
+              <h5 class="padds-top-small"><code>.row-bottom</code></h5>
+              <div class="row row-bottom" style="background-color: #f2f2f3; padding: 5px; height: 100px;">
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff; height: 90px;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+                <div class="medium-6 columns" style="background-color: #E3E3E5; border: 5px solid #f2f2f3; padding: 5px; color: #fff;">
+                  <div class="text-center">
+                    Column
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article id="breakpoints" class="doc-article">
+              <h4 class="padds-top-small">Creating a breakpoint</h4>
+              <p>
+                We have 3 default breakpoints already set called small (0 - 768), medium (768 - 1024)  &amp; large (1024 - ), but you can create your own if you wish.
+              </p>
+              <pre>
+                <code>
+  @media (min-width: [size]) {
+    @include make-grid([name]-);
+  }
+                </code>
+              </pre>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
