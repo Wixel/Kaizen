@@ -37,6 +37,13 @@
 	- We recommend using balanced mix of OOCSS & BEM for your class names, this
 		will keep your codebase light, reusable and easy to maintain.
 ------------------------------------------------------------------------------*/
+.button-kaizen{
+	border: 0;
+	background: url('../img/cover-multi.jpg') no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
 code{
 	background-color: lighten($accent-color, 30%);
 	border-radius: 2px;
@@ -157,7 +164,7 @@ pre{
 	}
 	&-article{
 		padding: $gutter-size;
-		border-bottom: 1px solid $soft-color;
+		border-bottom: 2px solid $soft-color;
 	}
 }
 
