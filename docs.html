@@ -83,6 +83,7 @@
         <a href="http://wixel.github.io/Kaizen/"><h2 class="doc-nav-header text-center">KAIZEN</h2></a>
         <a class="doc-nav-item doc-nav-item-heading" href="#general">General</a>
         <a class="doc-nav-item" href="#started">Getting Started</a>
+        <a class="doc-nav-item" href="#type">Typography</a>
         <!-- <a class="doc-nav-item" href="#favicons">Favicons</a> -->
         <!-- <a class="doc-nav-item" href="#metatags">Meta tags</a> -->
         <!-- <a class="doc-nav-item" href="#">Open Graph</a> -->
@@ -112,8 +113,61 @@
                 <li>Run: <code>kzn [directory] -s</code> - Start serving the specified directory from the built-in web server</li>
                 <li>Run: <code>kzn --help</code> for further instructions</li>
               </ul>
+              <h6>
+                We highly recommend you customize the framework settings to suit your brand in <code>_base.scss</code>, this should take less than a minute to do.
+              </h6>
               <p>
                 If something does happen to go wrong, you can add the <code>-v</code> argument to enable more verbosity.
+              </p>
+            </article>
+            <article id="type" class="doc-article">
+              <h3>Typography</h3>
+              <p>
+                The typography framework has been built to make set up and customization really simple.
+              </p>
+              <p>
+                All header, paragraph etc. sizes are all calculated with the <code>$body-font-size</code> variable.
+              </p>
+              <p>
+                <strong>Other important settings:</strong>
+              </p>
+              <ul>
+                <li>
+                  <code>$size-ratio</code> This will set the sizing ratio between font sizes
+                </li>
+                <li>
+                  <code>$header-font-stack</code> Font stack for headings
+                </li>
+                <li>
+                  <code>$body-font-stack</code> Font stack for everything else
+                </li>
+                <li>
+                  <code>$font-smoothing</code> Will enable font smoothing (this is only needed for *some* fonts).
+                </li>
+              </ul>
+              <h4 class="padds-top-small">Typography helpers</h4>
+              <h5><code>.no-style-list</code></h5>
+              <p>
+                Removes default list styles
+              </p>
+              <h5><code>.text-dropcap</code></h5>
+              <p class="text-dropcap">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+              <h5>Text Alignment</h5>
+              <ul>
+                <li>
+                  <code>.text-left</code>
+                </li>
+                <li>
+                  <code>.text-center</code>
+                </li>
+                <li>
+                  <code>.text-right</code>
+                </li>
+              </ul>
+              <p>
+                These are also Breakpoint specific using <code>.small-text-center</code> etc.
               </p>
             </article>
             <article id="grid" class="doc-article">
