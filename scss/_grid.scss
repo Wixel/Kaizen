@@ -35,6 +35,10 @@
 .row{
   margin-left: auto;
   margin-right: auto;
+  
+  // IE9 poyfill
+  -js-display: flex;
+
   @include display(flex);
   @include flex(0 1 auto);
   @include flex-direction(row);
