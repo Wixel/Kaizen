@@ -158,6 +158,7 @@ pre{
 	}
 
 	&-content{
+		margin-left: 33.33333%;
 		height: 100%;
 		height: 100vh;
 		overflow: scroll;
@@ -194,6 +195,12 @@ pre{
 				font-size: rem(16);
 			}
 		}
+
+	.doc{
+		&-content{
+			margin-left: 16.66667%;
+		}
+	}
 }
 @media only screen and (min-width: $large-breakpoint){
 	.header{
