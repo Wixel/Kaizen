@@ -132,6 +132,13 @@
     .row{
       display: inline-block;
       width: 100%;
+      clear: both;
+
+      &-center{
+        .columns{
+          margin: 0 auto;
+        }
+      }
     }
     .columns{
       display: inline-block;
