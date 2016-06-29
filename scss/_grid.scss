@@ -123,29 +123,6 @@
   	  width: 100%;
   	}
 
-
-/*------------------------------------------------------------------------------
-	IE9 grid support
-------------------------------------------------------------------------------*/
-@if($support-ie9){
-  @media screen and (min-width:0) and (min-resolution: .001dpcm) {
-    .row{
-      display: inline-block;
-      width: 100%;
-      clear: both;
-
-      &-center{
-        .columns{
-          margin: 0 auto;
-        }
-      }
-    }
-    .columns{
-      display: inline-block;
-      float: left;
-    }
-  }
-}
 /*------------------------------------------------------------------------------
 	Generate grids
 	- You can easily create more, we've commented out one example
