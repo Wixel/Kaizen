@@ -35,7 +35,7 @@
 .row{
   margin-left: auto;
   margin-right: auto;
-  
+
   // IE9 poyfill
   -js-display: flex;
 
@@ -73,6 +73,10 @@
   // }
   &-center{
     @include justify-content(center);
+
+    // Bourbon overwrite
+    -ms-flex-pack: left;
+
     .column, .columns{
       margin: 0 auto;
     }
