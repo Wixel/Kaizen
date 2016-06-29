@@ -73,6 +73,10 @@
   // }
   &-center{
     @include justify-content(center);
+
+    // Bourbon overwrite (IE10 hack)
+    -ms-flex-pack: left;
+
     .column, .columns{
       margin: 0 auto;
     }
