@@ -118,7 +118,8 @@
   .column, .columns{
     // @include display(flex);
     @include flex(0 0 auto);
-    padding: 0 $gutter-size;
+    padding-left: $gutter-size;
+    padding-right: $gutter-size;
   }
   	// Auto width columns
     .column{
