@@ -117,3 +117,8 @@ img{
   	vertical-align: middle;
   	-ms-interpolation-mode: bicubic;
 }
+
+// Stop Images from flowing out of a table cell
+table{
+	table-layout: fixed;
+}
