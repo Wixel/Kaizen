@@ -25,6 +25,7 @@ div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td{
   - add this to body using @extend %body-type;
 ------------------------------------------------------------------------------*/
 %body-type{
+	font-family: $body-font-stack;
 	color: $primary-color;
   font-size: $body-font-size / $size-ratio;
 	font-weight: $body-font-weight;
