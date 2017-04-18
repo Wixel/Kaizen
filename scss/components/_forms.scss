@@ -12,6 +12,7 @@ input, select, textarea{
 	height: 50px;
 	color: lighten($primary-color, 5%);
 	font-size: $paragraph-font-size;
+	font-family: inherit;
 
 	// Interaction
 	&:focus{
