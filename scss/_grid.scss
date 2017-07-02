@@ -97,22 +97,6 @@
   &-bottom{
     @include align-items(flex-end);
   }
-
-
-  // @TODO: Remove legacy code
-  &-center-columns{
-    [class*="column"],  [class*="columns"]{
-      margin: 0 auto;
-    }
-  }
-  &.full-width{
-		max-width: 100%;
-	}
-	&.collapse > .column, &.collapse > .columns{
-		padding-left: 0;
-    padding-right: 0;
-	}
-  // ------------------------
 }
   // Columns/Children
   .column, .columns{
