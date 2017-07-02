@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------------------
+	Browser update warning
+	See: Browser-Update.org
+	Code: https://browser-update.org/customize.html
+	To test/view code add `#test-bu` to the end of the URL
+------------------------------------------------------------------------------*/
+body{
+	.buorg{
+		border-bottom:1px solid $soft-color;    
+		font: 17px Calibri,Helvetica,Arial,sans-serif;    
+		box-shadow: none;
+
+		div{ 
+			a, a:visited{ 
+				box-shadow: none;    
+			}
+		}
+	}
+	#buorgig{ 
+		// background-color: #edbc68;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	body{
+		.buorg{
+			// background-position: 9px 8px;
+			div{ 
+				// padding:5px 12px 5px 9px; 
+			}
+		}
+	}
+}
