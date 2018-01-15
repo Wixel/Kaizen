@@ -8,6 +8,8 @@
 ------------------------------------------------------------------------------*/
 // load normalize.css CSS reset
 @import 'vendor/normalize';
+// Mixins
+@import 'mixins';
 // this is the settings file & contains CSS that needs to load first
 @import 'base';
 // helpers to simplify development

@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------------
+	Mixins
+------------------------------------------------------------------------------*/
+
+
+// User select
+// @include(user-select(none));
+@mixin user-select($arg) {
+  -webkit-touch-callout: $arg;
+  -webkit-user-select: $arg;
+  -khtml-user-select: $arg;
+  -moz-user-select: $arg;
+  -ms-user-select: $arg;
+  user-select: $arg;
+}
