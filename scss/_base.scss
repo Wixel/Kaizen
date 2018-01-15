@@ -44,12 +44,12 @@ $paragraph-font-size: rem($body-font-size);
 ------------------------------------------------------------------------------*/
 
 // Max width for .row's
-$max-width: rem(1140);
+$max-width: 1140px;
 
 // Breakpoints
-$medium-breakpoint: rem(768);
-$large-breakpoint: rem(1024);
-$xlarge-breakpoint: rem(1400);
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+$xlarge-breakpoint: 1400px;
 
 // Grid settings
 $columns: 12;
@@ -68,8 +68,8 @@ $soft-color: #E3E3E5;
 	- We use these for the spacing helpers but they're also a good way to keep
 		things consistent
 ------------------------------------------------------------------------------*/
-$small-space: rem(35);
-$medium-space: rem(90);
+$small-space: 35px;
+$medium-space: 90px;
 $large-space: $medium-space * 2;
 
 /*------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ body{
 
 	// font smoothing
 	@if($font-smoothing){
-		@include prefixer(text-shadow, 1px 1px 1px rgba(0,0,0,0.004), webkit moz spec);
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}

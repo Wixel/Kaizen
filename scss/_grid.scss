@@ -12,7 +12,7 @@
   @if $type == width and $index > 0 {
     .#{$class}#{$index} {
       max-width: percentage(($index / $columns));
-      @include flex-basis(percentage(($index / $columns)));
+      flex-basis: percentage(($index / $columns));
     }
   }
 }
@@ -39,10 +39,10 @@
   // IE9 polyfill
   -js-display: flex;
 
-  @include display(flex);
-  @include flex(0 1 auto);
-  @include flex-direction(row);
-  @include flex-wrap(wrap);
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
 	max-width: $max-width;
 
   /*----------------------------------------------------------------------------
@@ -59,7 +59,7 @@
 
   // Columns
   &-reverse{
-    @include flex-direction(row-reverse);
+    flex-direction: row-reverse;
   }
   &-collapse{
     > .column,> .columns{
@@ -69,10 +69,10 @@
   }
   // Horizontal
   // &-left{
-  //   @include justify-content(start);
+  //   justify-content: start;
   // }
   &-center{
-    @include justify-content(center);
+    justify-content: center;
 
     // Bourbon overwrite (IE10 hack)
     -ms-flex-pack: left;
@@ -82,33 +82,32 @@
     }
   }
   &-right{
-    @include justify-content(flex-end);
+    justify-content: flex-end;
   }
   &-justify{
-    @include justify-content(space-between);
+    justify-content: space-between;
   }
   // Verical
   &-top{
-    @include align-items(flex-start);
+    align-items: flex-start;
   }
   &-middle{
-    @include align-items(center);
+    align-items: center;
   }
   &-bottom{
-    @include align-items(flex-end);
+    align-items: flex-end;
   }
 }
   // Columns/Children
   .column, .columns{
-    // @include display(flex);
-    @include flex(0 0 auto);
+    flex: 0 0 auto;
     padding-left: $gutter-size;
     padding-right: $gutter-size;
   }
   	// Auto width columns
     .column{
-      @include flex-grow(1);
-      @include flex-basis(0);
+      flex-grow: 1;
+      flex-basis: 0;
       max-width: 100%;
     }
     // Set width columns
