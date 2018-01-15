@@ -13,3 +13,17 @@
   -ms-user-select: $arg;
   user-select: $arg;
 }
+
+// Placeholder styling
+// @include placeholder {
+// 		color: darken($soft-color, 60%);
+// }
+@mixin placeholder {
+
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}
