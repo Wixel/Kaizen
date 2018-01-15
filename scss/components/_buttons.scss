@@ -10,7 +10,7 @@
 	text-transform: uppercase;
 	letter-spacing: 0.3px;
 	@include user-select(none);
-	@include transition(background-color 0.15s ease-in-out);
+	transition: background-color 0.15s ease-in-out;
 	text-align: center;
 
 	// Block button
