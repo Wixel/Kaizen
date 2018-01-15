@@ -45,7 +45,7 @@ input, select, textarea{
 		text-transform: uppercase;
 		letter-spacing: 0.3px;
 		@include user-select(none);
-		@include transition(background-color 0.15s ease-in-out);
+		transition: background-color 0.15s ease-in-out;
 		padding: ($small-space/ 6) ($small-space/ 3);
 		font-size: 60%;
 		font-weight: bolder;
